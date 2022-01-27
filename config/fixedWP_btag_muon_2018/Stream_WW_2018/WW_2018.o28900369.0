@@ -1,0 +1,222 @@
+ ( INFO  )  SCycleController   : Initializing
+ ( INFO  )  SCycleController   : Deleting all analysis cycle algorithms from memory
+ ( INFO  )  SCycleController   : Reading xml file: 'WW_2018_1.xml'
+ ( INFO  )  SCycleController   : Created cycle 'uhh2::AnalysisModuleRunner'
+ ( INFO  )  SCycleBaseExec     : Initializing from configuration
+ ( INFO  )  SCycleBaseExec     : Reading SInputData: MC - WW_2018
+ ( INFO  )  SCycleConfig       : ===========================================================
+ ( INFO  )  SCycleConfig       :                     Cycle configuration
+ ( INFO  )  SCycleConfig       :   - Running mode: LOCAL
+ ( INFO  )  SCycleConfig       :   - Target luminosity: 59970
+ ( INFO  )  SCycleConfig       :   - Output directory: /nfs/dust/cms/user/hugobg/ZPrime_102X/analysis_output/2018_CHS/muon///fixedWP_btag_muon_2018/
+ ( INFO  )  SCycleConfig       :   - Post-fix: _0
+ ( INFO  )  SInputData         :  ---------------------------------------------------------
+ ( INFO  )  SInputData         :  Type               : MC
+ ( INFO  )  SInputData         :  Version            : WW_2018
+ ( INFO  )  SInputData         :  Total luminosity   : 103402pb-1
+ ( INFO  )  SInputData         :  NEventsMax         : -1
+ ( INFO  )  SInputData         :  NEventsSkip        : 0
+ ( INFO  )  SInputData         :  Cacheable          : No
+ ( INFO  )  SInputData         :  Skip validation    : No
+ ( INFO  )  SInputData         :  Skip file lookup   : No
+ ( INFO  )  SInputData         :  Input File         : '/nfs/dust/cms/group/zprime-uhh/Presel_2018_CHS/workdir_Zprime_PreSelec_2018/uhh2.AnalysisModuleRunner.MC.WW_2018_0.root' (file) | '0' (lumi)
+ ( INFO  )  SInputData         :  Input File         : '/nfs/dust/cms/group/zprime-uhh/Presel_2018_CHS/workdir_Zprime_PreSelec_2018/uhh2.AnalysisModuleRunner.MC.WW_2018_1.root' (file) | '0' (lumi)
+ ( INFO  )  SInputData         :  Input File         : '/nfs/dust/cms/group/zprime-uhh/Presel_2018_CHS/workdir_Zprime_PreSelec_2018/uhh2.AnalysisModuleRunner.MC.WW_2018_10.root' (file) | '0' (lumi)
+ ( INFO  )  SInputData         :  Input File         : '/nfs/dust/cms/group/zprime-uhh/Presel_2018_CHS/workdir_Zprime_PreSelec_2018/uhh2.AnalysisModuleRunner.MC.WW_2018_11.root' (file) | '0' (lumi)
+ ( INFO  )  SInputData         :  Input File         : '/nfs/dust/cms/group/zprime-uhh/Presel_2018_CHS/workdir_Zprime_PreSelec_2018/uhh2.AnalysisModuleRunner.MC.WW_2018_12.root' (file) | '0' (lumi)
+ ( INFO  )  SInputData         :  Input File         : '/nfs/dust/cms/group/zprime-uhh/Presel_2018_CHS/workdir_Zprime_PreSelec_2018/uhh2.AnalysisModuleRunner.MC.WW_2018_13.root' (file) | '0' (lumi)
+ ( INFO  )  SInputData         :  Input File         : '/nfs/dust/cms/group/zprime-uhh/Presel_2018_CHS/workdir_Zprime_PreSelec_2018/uhh2.AnalysisModuleRunner.MC.WW_2018_14.root' (file) | '0' (lumi)
+ ( INFO  )  SInputData         :  Input File         : '/nfs/dust/cms/group/zprime-uhh/Presel_2018_CHS/workdir_Zprime_PreSelec_2018/uhh2.AnalysisModuleRunner.MC.WW_2018_15.root' (file) | '0' (lumi)
+ ( INFO  )  SInputData         :  Input File         : '/nfs/dust/cms/group/zprime-uhh/Presel_2018_CHS/workdir_Zprime_PreSelec_2018/uhh2.AnalysisModuleRunner.MC.WW_2018_2.root' (file) | '0' (lumi)
+ ( INFO  )  SInputData         :  Input File         : '/nfs/dust/cms/group/zprime-uhh/Presel_2018_CHS/workdir_Zprime_PreSelec_2018/uhh2.AnalysisModuleRunner.MC.WW_2018_3.root' (file) | '0' (lumi)
+ ( INFO  )  SInputData         :  Tree               : 'AnalysisTree' (name) | 'Flat input tree' (type)
+ ( INFO  )  SInputData         :  Tree               : 'AnalysisTree' (name) | 'Flat output tree' (type)
+ ( INFO  )  SInputData         :  ---------------------------------------------------------
+ ( INFO  )  SCycleConfig       : ===========================================================
+ ( INFO  )  SCycleController   : Job 'ZprimePreselectionJob' configured
+ ( INFO  )  SCycleController   : Time needed for initialisation:    9.5 s
+ ( INFO  )  SCycleController   : Entering ExecuteAllCycles()
+ ( INFO  )  SInputData         : Input type "MC" version "WW_2018" : 123872 events
+ ( INFO  )  SCycleController   : Executing Cycle #0 ('uhh2::AnalysisModuleRunner') locally
+ ( INFO  )  SCycleController   : Processing input data type: MC version: WW_2018
+ ( INFO  )  SCycleBaseExec     : Initialised InputData "MC" (Version:WW_2018) on worker node
+ AnalysisModule = ZprimeAnalysisModule
+ BTagCalibration = /nfs/dust/cms/user/hugobg/UHH2_v2/CMSSW_10_2_17/src/UHH2/common/data/2018/DeepJet_102XSF_V1_YearCorrelation-V1.csv
+ ElectronCollection = slimmedElectronsUSER
+ GenJetCollection = slimmedGenJets
+ GenParticleCollection = GenParticles
+ GenTopJetCollection = genjetsAk8SubstructureSoftDrop
+ JetCollection = jetsAk4CHS
+ MCBtagEfficiencies = /nfs/dust/cms/user/hugobg/UHH2_v2/CMSSW_10_2_17/src/UHH2/common/data/2018/BTagMCEfficiencyHists_muon2018.root
+ METName = slimmedMETsPuppi
+ MuonCollection = slimmedMuonsUSER
+ PrimaryVertexCollection = offlineSlimmedPrimaryVertices
+ ScaleVariationMuF = nominal
+ ScaleVariationMuR = nominal
+ Sys_BTagSF = nominal
+ Sys_EleID = nominal
+ Sys_EleTrigger = nominal
+ Sys_MuonID = nominal
+ Sys_MuonTrigger = nominal
+ Sys_PU = central
+ Sys_btag = central
+ TopJetCollection = jetsAk8CHSSubstructure_SoftDropCHS
+ TopPuppiJetCollection = jetsAk8PuppiSubstructure_SoftDropPuppi
+ channel = muon
+ dataset_lumi = 1.034018972000000067e+05
+ dataset_type = MC
+ dataset_version = WW_2018
+ genMETName = slimmedMETs_GenMET
+ is_looser_selection = false
+ is_puppi = true
+ jecsmear_direction = nominal
+ jersmear_direction = nominal
+ lumi_file = /nfs/dust/cms/user/hugobg/UHH2_v2/CMSSW_10_2_17/src/UHH2/common/data/2018/Cert_314472-325175_13TeV_PromptReco_Collisions18_JSON.root
+ lumihists_lumi_per_bin = 500.0
+ meta_jer_applied__jets = true
+ meta_jer_applied__topjets = true
+ meta_jer_applied__toppuppijets = true
+ n_events_total = 1.238720000000000000e+05
+ pileup_directory = /nfs/dust/cms/user/hugobg/UHH2_v2/CMSSW_10_2_17/src/UHH2/common/data/2018/MyMCPileupHistogram.root
+ pileup_directory_data = /nfs/dust/cms/user/hugobg/UHH2_v2/CMSSW_10_2_17/src/UHH2/common/data/2018/MyDataPileupHistogram2018.root
+ pileup_directory_data_down = /nfs/dust/cms/user/hugobg/UHH2_v2/CMSSW_10_2_17/src/UHH2/common/data/2018/MyDataPileupHistogram2018_66017.root
+ pileup_directory_data_up = /nfs/dust/cms/user/hugobg/UHH2_v2/CMSSW_10_2_17/src/UHH2/common/data/2018/MyDataPileupHistogram2018_72383.root
+ target_lumi = 5.997000000000000000e+04
+ use_sframe_weight = false
+ ( INFO  )  SCycleBaseExec     : Opening /nfs/dust/cms/group/zprime-uhh/Presel_2018_CHS/workdir_Zprime_PreSelec_2018/uhh2.AnalysisModuleRunner.MC.WW_2018_0.root
+ ( INFO  )  SCycleBaseExec     : Processing entry: 999 (999 / 123872 events processed so far, ~ 25 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 1999 (1999 / 123872 events processed so far, ~ 12 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 2999 (2999 / 123872 events processed so far, ~ 8.7 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 3999 (3999 / 123872 events processed so far, ~ 6.5 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 4999 (4999 / 123872 events processed so far, ~ 5.5 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 5999 (5999 / 123872 events processed so far, ~ 4.6 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 6999 (6999 / 123872 events processed so far, ~ 4.2 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 7999 (7999 / 123872 events processed so far, ~ 3.6 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 8999 (8999 / 123872 events processed so far, ~ 3.4 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 9999 (9999 / 123872 events processed so far, ~ 3 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 10999 (10999 / 123872 events processed so far, ~ 2.7 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 11999 (11999 / 123872 events processed so far, ~ 2.6 minutes left)
+ ( INFO  )  SCycleBaseExec     : Opening /nfs/dust/cms/group/zprime-uhh/Presel_2018_CHS/workdir_Zprime_PreSelec_2018/uhh2.AnalysisModuleRunner.MC.WW_2018_1.root
+ ( INFO  )  SCycleBaseExec     : Processing entry: 780 (12999 / 123872 events processed so far, ~ 2.6 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 1780 (13999 / 123872 events processed so far, ~ 2.4 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 2780 (14999 / 123872 events processed so far, ~ 2.3 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 3780 (15999 / 123872 events processed so far, ~ 2.1 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 4780 (16999 / 123872 events processed so far, ~ 2.1 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 5780 (17999 / 123872 events processed so far, ~ 2 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 6780 (18999 / 123872 events processed so far, ~ 1.8 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 7780 (19999 / 123872 events processed so far, ~ 1.8 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 8780 (20999 / 123872 events processed so far, ~ 1.7 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 9780 (21999 / 123872 events processed so far, ~ 1.7 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 10780 (22999 / 123872 events processed so far, ~ 1.6 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 11780 (23999 / 123872 events processed so far, ~ 1.5 minutes left)
+ ( INFO  )  SCycleBaseExec     : Opening /nfs/dust/cms/group/zprime-uhh/Presel_2018_CHS/workdir_Zprime_PreSelec_2018/uhh2.AnalysisModuleRunner.MC.WW_2018_10.root
+ ( INFO  )  SCycleBaseExec     : Processing entry: 100 (24999 / 123872 events processed so far, ~ 1.5 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 1100 (25999 / 123872 events processed so far, ~ 1.5 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 2100 (26999 / 123872 events processed so far, ~ 1.4 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 3100 (27999 / 123872 events processed so far, ~ 1.4 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 4100 (28999 / 123872 events processed so far, ~ 1.4 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 5100 (29999 / 123872 events processed so far, ~ 1.4 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 6100 (30999 / 123872 events processed so far, ~ 1.3 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 7100 (31999 / 123872 events processed so far, ~ 1.3 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 8100 (32999 / 123872 events processed so far, ~ 1.2 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 9100 (33999 / 123872 events processed so far, ~ 1.2 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 10100 (34999 / 123872 events processed so far, ~ 1.2 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 11100 (35999 / 123872 events processed so far, ~ 1.1 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 12100 (36999 / 123872 events processed so far, ~ 1.1 minutes left)
+ ( INFO  )  SCycleBaseExec     : Opening /nfs/dust/cms/group/zprime-uhh/Presel_2018_CHS/workdir_Zprime_PreSelec_2018/uhh2.AnalysisModuleRunner.MC.WW_2018_11.root
+ ( INFO  )  SCycleBaseExec     : Processing entry: 656 (37999 / 123872 events processed so far, ~ 1.1 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 1656 (38999 / 123872 events processed so far, ~ 1.1 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 2656 (39999 / 123872 events processed so far, ~ 1.1 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 3656 (40999 / 123872 events processed so far, ~ 1 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 4656 (41999 / 123872 events processed so far, ~ 1 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 5656 (42999 / 123872 events processed so far, ~ 1 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 6656 (43999 / 123872 events processed so far, ~ 58 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 7656 (44999 / 123872 events processed so far, ~ 58 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 8656 (45999 / 123872 events processed so far, ~ 56 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 9656 (46999 / 123872 events processed so far, ~ 56 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 10656 (47999 / 123872 events processed so far, ~ 54 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 11656 (48999 / 123872 events processed so far, ~ 53 seconds left)
+ ( INFO  )  SCycleBaseExec     : Opening /nfs/dust/cms/group/zprime-uhh/Presel_2018_CHS/workdir_Zprime_PreSelec_2018/uhh2.AnalysisModuleRunner.MC.WW_2018_12.root
+ ( INFO  )  SCycleBaseExec     : Processing entry: 194 (49999 / 123872 events processed so far, ~ 53 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 1194 (50999 / 123872 events processed so far, ~ 51 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 2194 (51999 / 123872 events processed so far, ~ 51 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 3194 (52999 / 123872 events processed so far, ~ 49 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 4194 (53999 / 123872 events processed so far, ~ 49 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 5194 (54999 / 123872 events processed so far, ~ 48 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 6194 (55999 / 123872 events processed so far, ~ 47 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 7194 (56999 / 123872 events processed so far, ~ 46 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 8194 (57999 / 123872 events processed so far, ~ 45 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 9194 (58999 / 123872 events processed so far, ~ 44 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 10194 (59999 / 123872 events processed so far, ~ 44 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 11194 (60999 / 123872 events processed so far, ~ 42 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 12194 (61999 / 123872 events processed so far, ~ 42 seconds left)
+ ( INFO  )  SCycleBaseExec     : Opening /nfs/dust/cms/group/zprime-uhh/Presel_2018_CHS/workdir_Zprime_PreSelec_2018/uhh2.AnalysisModuleRunner.MC.WW_2018_13.root
+ ( INFO  )  SCycleBaseExec     : Processing entry: 840 (62999 / 123872 events processed so far, ~ 42 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 1840 (63999 / 123872 events processed so far, ~ 40 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 2840 (64999 / 123872 events processed so far, ~ 39 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 3840 (65999 / 123872 events processed so far, ~ 39 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 4840 (66999 / 123872 events processed so far, ~ 37 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 5840 (67999 / 123872 events processed so far, ~ 37 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 6840 (68999 / 123872 events processed so far, ~ 36 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 7840 (69999 / 123872 events processed so far, ~ 35 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 8840 (70999 / 123872 events processed so far, ~ 34 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 9840 (71999 / 123872 events processed so far, ~ 34 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 10840 (72999 / 123872 events processed so far, ~ 33 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 11840 (73999 / 123872 events processed so far, ~ 32 seconds left)
+ ( INFO  )  SCycleBaseExec     : Opening /nfs/dust/cms/group/zprime-uhh/Presel_2018_CHS/workdir_Zprime_PreSelec_2018/uhh2.AnalysisModuleRunner.MC.WW_2018_14.root
+ ( INFO  )  SCycleBaseExec     : Processing entry: 34 (74999 / 123872 events processed so far, ~ 31 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 1034 (75999 / 123872 events processed so far, ~ 31 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 2034 (76999 / 123872 events processed so far, ~ 30 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 3034 (77999 / 123872 events processed so far, ~ 29 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 4034 (78999 / 123872 events processed so far, ~ 28 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 5034 (79999 / 123872 events processed so far, ~ 27 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 6034 (80999 / 123872 events processed so far, ~ 27 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 7034 (81999 / 123872 events processed so far, ~ 26 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 8034 (82999 / 123872 events processed so far, ~ 26 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 9034 (83999 / 123872 events processed so far, ~ 25 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 10034 (84999 / 123872 events processed so far, ~ 24 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 11034 (85999 / 123872 events processed so far, ~ 23 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 12034 (86999 / 123872 events processed so far, ~ 22 seconds left)
+ ( INFO  )  SCycleBaseExec     : Opening /nfs/dust/cms/group/zprime-uhh/Presel_2018_CHS/workdir_Zprime_PreSelec_2018/uhh2.AnalysisModuleRunner.MC.WW_2018_15.root
+ ( INFO  )  SCycleBaseExec     : Processing entry: 618 (87999 / 123872 events processed so far, ~ 22 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 1618 (88999 / 123872 events processed so far, ~ 22 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 2618 (89999 / 123872 events processed so far, ~ 21 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 3618 (90999 / 123872 events processed so far, ~ 20 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 4618 (91999 / 123872 events processed so far, ~ 19 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 5618 (92999 / 123872 events processed so far, ~ 19 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 6618 (93999 / 123872 events processed so far, ~ 18 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 7618 (94999 / 123872 events processed so far, ~ 17 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 8618 (95999 / 123872 events processed so far, ~ 17 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 9618 (96999 / 123872 events processed so far, ~ 16 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 10618 (97999 / 123872 events processed so far, ~ 16 seconds left)
+ ( INFO  )  SCycleBaseExec     : Opening /nfs/dust/cms/group/zprime-uhh/Presel_2018_CHS/workdir_Zprime_PreSelec_2018/uhh2.AnalysisModuleRunner.MC.WW_2018_2.root
+ ( INFO  )  SCycleBaseExec     : Processing entry: 739 (98999 / 123872 events processed so far, ~ 15 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 1739 (99999 / 123872 events processed so far, ~ 14 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 2739 (100999 / 123872 events processed so far, ~ 14 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 3739 (101999 / 123872 events processed so far, ~ 13 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 4739 (102999 / 123872 events processed so far, ~ 12 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 5739 (103999 / 123872 events processed so far, ~ 12 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 6739 (104999 / 123872 events processed so far, ~ 11 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 7739 (105999 / 123872 events processed so far, ~ 11 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 8739 (106999 / 123872 events processed so far, ~ 9.9 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 9739 (107999 / 123872 events processed so far, ~ 9.4 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 10739 (108999 / 123872 events processed so far, ~ 8.7 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 11739 (109999 / 123872 events processed so far, ~ 8.1 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 12739 (110999 / 123872 events processed so far, ~ 7.5 seconds left)
+ ( INFO  )  SCycleBaseExec     : Opening /nfs/dust/cms/group/zprime-uhh/Presel_2018_CHS/workdir_Zprime_PreSelec_2018/uhh2.AnalysisModuleRunner.MC.WW_2018_3.root
+ ( INFO  )  SCycleBaseExec     : Processing entry: 993 (111999 / 123872 events processed so far, ~ 7 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 1993 (112999 / 123872 events processed so far, ~ 6.4 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 2993 (113999 / 123872 events processed so far, ~ 5.8 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 3993 (114999 / 123872 events processed so far, ~ 5.2 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 4993 (115999 / 123872 events processed so far, ~ 4.6 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 5993 (116999 / 123872 events processed so far, ~ 4 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 6993 (117999 / 123872 events processed so far, ~ 3.4 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 7993 (118999 / 123872 events processed so far, ~ 2.8 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 8993 (119999 / 123872 events processed so far, ~ 2.2 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 9993 (120999 / 123872 events processed so far, ~ 1.7 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 10993 (121999 / 123872 events processed so far, ~ 1.1 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 11993 (122999 / 123872 events processed so far, ~ 0.5 seconds left)
+ ( INFO  )  SCycleBaseExec     : Terminated InputData "MC" (Version:WW_2018) on worker node
+ ( INFO  )  SCycleController   : Writing output of "uhh2::AnalysisModuleRunner" to: /nfs/dust/cms/user/hugobg/ZPrime_102X/analysis_output/2018_CHS/muon///fixedWP_btag_muon_2018/uhh2.AnalysisModuleRunner.MC.WW_2018_0.root
+ ( INFO  )  SCycleController   : Overall cycle statistics:
+ ( INFO  )  SCycleController   :     123872 Events - Real time  90.81 s  -  1364 Hz | CPU time  71.97 s  -  1721 Hz

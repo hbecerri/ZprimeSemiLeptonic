@@ -1,0 +1,258 @@
+ ( INFO  )  SCycleController   : Initializing
+ ( INFO  )  SCycleController   : Deleting all analysis cycle algorithms from memory
+ ( INFO  )  SCycleController   : Reading xml file: 'DATA_SingleMuon_Run2016v3F_blinded_2.xml'
+ ( INFO  )  SCycleController   : Created cycle 'uhh2::AnalysisModuleRunner'
+ ( INFO  )  SCycleBaseExec     : Initializing from configuration
+ ( INFO  )  SCycleBaseExec     : Reading SInputData: DATA - DATA_SingleMuon_Run2016v3F_blinded
+ ( INFO  )  SCycleConfig       : ===========================================================
+ ( INFO  )  SCycleConfig       :                     Cycle configuration
+ ( INFO  )  SCycleConfig       :   - Running mode: LOCAL
+ ( INFO  )  SCycleConfig       :   - Target luminosity: 36773
+ ( INFO  )  SCycleConfig       :   - Output directory: /nfs/dust/cms/user/hugobg/ZPrime_102X/analysis_output/2016_CHS/electron///fixedWP_btag_electron_2016/
+ ( INFO  )  SCycleConfig       :   - Post-fix: _1
+ ( INFO  )  SInputData         :  ---------------------------------------------------------
+ ( INFO  )  SInputData         :  Type               : DATA
+ ( INFO  )  SInputData         :  Version            : DATA_SingleMuon_Run2016v3F_blinded
+ ( INFO  )  SInputData         :  Total luminosity   : 1pb-1
+ ( INFO  )  SInputData         :  NEventsMax         : -1
+ ( INFO  )  SInputData         :  NEventsSkip        : 0
+ ( INFO  )  SInputData         :  Cacheable          : No
+ ( INFO  )  SInputData         :  Skip validation    : No
+ ( INFO  )  SInputData         :  Skip file lookup   : No
+ ( INFO  )  SInputData         :  Input File         : '/nfs/dust/cms/group/zprime-uhh/Presel_2016/workdir_Zprime_PreSelec_2016v3_CHS/uhh2.AnalysisModuleRunner.DATA.DATA_SingleMuon_Run2016v3F_13.root' (file) | '0' (lumi)
+ ( INFO  )  SInputData         :  Input File         : '/nfs/dust/cms/group/zprime-uhh/Presel_2016/workdir_Zprime_PreSelec_2016v3_CHS/uhh2.AnalysisModuleRunner.DATA.DATA_SingleMuon_Run2016v3F_14.root' (file) | '0' (lumi)
+ ( INFO  )  SInputData         :  Input File         : '/nfs/dust/cms/group/zprime-uhh/Presel_2016/workdir_Zprime_PreSelec_2016v3_CHS/uhh2.AnalysisModuleRunner.DATA.DATA_SingleMuon_Run2016v3F_15.root' (file) | '0' (lumi)
+ ( INFO  )  SInputData         :  Input File         : '/nfs/dust/cms/group/zprime-uhh/Presel_2016/workdir_Zprime_PreSelec_2016v3_CHS/uhh2.AnalysisModuleRunner.DATA.DATA_SingleMuon_Run2016v3F_16.root' (file) | '0' (lumi)
+ ( INFO  )  SInputData         :  Input File         : '/nfs/dust/cms/group/zprime-uhh/Presel_2016/workdir_Zprime_PreSelec_2016v3_CHS/uhh2.AnalysisModuleRunner.DATA.DATA_SingleMuon_Run2016v3F_17.root' (file) | '0' (lumi)
+ ( INFO  )  SInputData         :  Tree               : 'AnalysisTree' (name) | 'Flat input tree' (type)
+ ( INFO  )  SInputData         :  Tree               : 'AnalysisTree' (name) | 'Flat output tree' (type)
+ ( INFO  )  SInputData         :  ---------------------------------------------------------
+ ( INFO  )  SCycleConfig       : ===========================================================
+ ( INFO  )  SCycleController   : Job 'ZprimePreselectionJob' configured
+ ( INFO  )  SCycleController   : Time needed for initialisation:   0.75 s
+ ( INFO  )  SCycleController   : Entering ExecuteAllCycles()
+ ( INFO  )  SInputData         : Input type "DATA" version "DATA_SingleMuon_Run2016v3F_blinded" : 164715 events
+ ( INFO  )  SCycleController   : Executing Cycle #0 ('uhh2::AnalysisModuleRunner') locally
+ ( INFO  )  SCycleController   : Processing input data type: DATA version: DATA_SingleMuon_Run2016v3F_blinded
+ ( INFO  )  SCycleBaseExec     : Initialised InputData "DATA" (Version:DATA_SingleMuon_Run2016v3F_blinded) on worker node
+ AnalysisModule = ZprimeAnalysisModule
+ BTagCalibration = /nfs/dust/cms/user/hugobg/UHH2_v2/CMSSW_10_2_17/src/UHH2/common/data/2016/DeepJet_2016LegacySF_V1_YearCorrelation-V1.csv
+ ElectronCollection = slimmedElectronsUSER
+ GenJetCollection = slimmedGenJets
+ GenParticleCollection = GenParticles
+ GenTopJetCollection = genjetsAk8SubstructureSoftDrop
+ JetCollection = jetsAk4CHS
+ MCBtagEfficiencies = /nfs/dust/cms/user/hugobg/UHH2_v2/CMSSW_10_2_17/src/UHH2/common/data/2016/BTagMCEfficiencyHists_electron2016.root
+ METName = slimmedMETsPuppi
+ MuonCollection = slimmedMuonsUSER
+ PrimaryVertexCollection = offlineSlimmedPrimaryVertices
+ ScaleVariationMuF = nominal
+ ScaleVariationMuR = nominal
+ Sys_BTagSF = central
+ Sys_EleID = nominal
+ Sys_EleTrigger = nominal
+ Sys_MuonID = nominal
+ Sys_MuonTrigger = nominal
+ Sys_PU = central
+ Sys_btag = central
+ TopJetCollection = jetsAk8CHSSubstructure_SoftDropCHS
+ TopPuppiJetCollection = jetsAk8PuppiSubstructure_SoftDropPuppi
+ channel = electron
+ dataset_lumi = 1.000000000000000000e+00
+ dataset_type = DATA
+ dataset_version = DATA_SingleMuon_Run2016v3F_blinded
+ genMETName = slimmedMETs_GenMET
+ is_looser_selection = false
+ is_puppi = true
+ jecsmear_direction = nominal
+ jersmear_direction = nominal
+ lumi_file = /nfs/dust/cms/user/hugobg/UHH2/CMSSW_10_2_10/src/UHH2/common/data/2016/Cert_271036-284044_13TeV_23Sep2016ReReco_Collisions16_JSON.root
+ lumihists_lumi_per_bin = 500.0
+ n_events_total = 1.647150000000000000e+05
+ pileup_directory = /nfs/dust/cms/user/hugobg/UHH2/CMSSW_10_2_10/src/UHH2/common/data/2016/MyMCPileupHistogram.root
+ pileup_directory_data = /nfs/dust/cms/user/hugobg/UHH2/CMSSW_10_2_10/src/UHH2/common/data/2016/MyDataPileupHistogram.root
+ pileup_directory_data_down = /nfs/dust/cms/user/hugobg/UHH2/CMSSW_10_2_10/src/UHH2/common/data/2016/MyDataPileupHistogram_66017.root
+ pileup_directory_data_up = /nfs/dust/cms/user/hugobg/UHH2/CMSSW_10_2_10/src/UHH2/common/data/2016/MyDataPileupHistogram_72383.root
+ target_lumi = 3.677300000000000000e+04
+ use_sframe_weight = false
+Warning: MCLumiWeight will not have an effect on this non-MC sample (dataset_type = 'DATA')
+Warning: MCPileupReweight will not have an effect on this non-MC sample (dataset_type = 'DATA')
+Warning: MCBTagScaleFactor will not have an effect on  this non-MC sample (dataset_type = 'DATA')
+Warning: MCScaleVariation will not have an effect on this non-MC sample (dataset_type = 'DATA')
+Warning: MCElecScaleFactor will not have an effect on  this non-MC sample (dataset_type = 'DATA')
+Warning: MCElecScaleFactor will not have an effect on  this non-MC sample (dataset_type = 'DATA')
+Warning: MCElecScaleFactor will not have an effect on  this non-MC sample (dataset_type = 'DATA')
+Warning: TopTagScaleFactor will not have an effect on  this non-MC sample (dataset_type = 'DATA')
+ ( INFO  )  SCycleBaseExec     : Opening /nfs/dust/cms/group/zprime-uhh/Presel_2016/workdir_Zprime_PreSelec_2016v3_CHS/uhh2.AnalysisModuleRunner.DATA.DATA_SingleMuon_Run2016v3F_13.root
+ ( INFO  )  SCycleBaseExec     : Processing entry: 999 (999 / 164715 events processed so far, ~ 0 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 1999 (1999 / 164715 events processed so far, ~ 1.4 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 2999 (2999 / 164715 events processed so far, ~ 54 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 3999 (3999 / 164715 events processed so far, ~ 40 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 4999 (4999 / 164715 events processed so far, ~ 32 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 5999 (5999 / 164715 events processed so far, ~ 26 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 6999 (6999 / 164715 events processed so far, ~ 23 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 7999 (7999 / 164715 events processed so far, ~ 20 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 8999 (8999 / 164715 events processed so far, ~ 17 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 9999 (9999 / 164715 events processed so far, ~ 31 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 10999 (10999 / 164715 events processed so far, ~ 28 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 11999 (11999 / 164715 events processed so far, ~ 25 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 12999 (12999 / 164715 events processed so far, ~ 23 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 13999 (13999 / 164715 events processed so far, ~ 22 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 14999 (14999 / 164715 events processed so far, ~ 20 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 15999 (15999 / 164715 events processed so far, ~ 28 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 16999 (16999 / 164715 events processed so far, ~ 26 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 17999 (17999 / 164715 events processed so far, ~ 24 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 18999 (18999 / 164715 events processed so far, ~ 23 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 19999 (19999 / 164715 events processed so far, ~ 22 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 20999 (20999 / 164715 events processed so far, ~ 21 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 21999 (21999 / 164715 events processed so far, ~ 19 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 22999 (22999 / 164715 events processed so far, ~ 18 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 23999 (23999 / 164715 events processed so far, ~ 18 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 24999 (24999 / 164715 events processed so far, ~ 17 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 25999 (25999 / 164715 events processed so far, ~ 16 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 26999 (26999 / 164715 events processed so far, ~ 20 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 27999 (27999 / 164715 events processed so far, ~ 20 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 28999 (28999 / 164715 events processed so far, ~ 19 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 29999 (29999 / 164715 events processed so far, ~ 18 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 30999 (30999 / 164715 events processed so far, ~ 17 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 31999 (31999 / 164715 events processed so far, ~ 17 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 32999 (32999 / 164715 events processed so far, ~ 16 seconds left)
+ ( INFO  )  SCycleBaseExec     : Opening /nfs/dust/cms/group/zprime-uhh/Presel_2016/workdir_Zprime_PreSelec_2016v3_CHS/uhh2.AnalysisModuleRunner.DATA.DATA_SingleMuon_Run2016v3F_14.root
+ ( INFO  )  SCycleBaseExec     : Processing entry: 225 (33999 / 164715 events processed so far, ~ 19 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 1225 (34999 / 164715 events processed so far, ~ 19 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 2225 (35999 / 164715 events processed so far, ~ 18 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 3225 (36999 / 164715 events processed so far, ~ 17 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 4225 (37999 / 164715 events processed so far, ~ 17 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 5225 (38999 / 164715 events processed so far, ~ 16 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 6225 (39999 / 164715 events processed so far, ~ 16 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 7225 (40999 / 164715 events processed so far, ~ 15 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 8225 (41999 / 164715 events processed so far, ~ 15 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 9225 (42999 / 164715 events processed so far, ~ 14 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 10225 (43999 / 164715 events processed so far, ~ 16 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 11225 (44999 / 164715 events processed so far, ~ 16 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 12225 (45999 / 164715 events processed so far, ~ 15 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 13225 (46999 / 164715 events processed so far, ~ 15 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 14225 (47999 / 164715 events processed so far, ~ 15 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 15225 (48999 / 164715 events processed so far, ~ 14 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 16225 (49999 / 164715 events processed so far, ~ 16 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 17225 (50999 / 164715 events processed so far, ~ 16 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 18225 (51999 / 164715 events processed so far, ~ 15 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 19225 (52999 / 164715 events processed so far, ~ 15 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 20225 (53999 / 164715 events processed so far, ~ 14 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 21225 (54999 / 164715 events processed so far, ~ 14 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 22225 (55999 / 164715 events processed so far, ~ 14 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 23225 (56999 / 164715 events processed so far, ~ 13 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 24225 (57999 / 164715 events processed so far, ~ 13 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 25225 (58999 / 164715 events processed so far, ~ 13 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 26225 (59999 / 164715 events processed so far, ~ 14 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 27225 (60999 / 164715 events processed so far, ~ 14 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 28225 (61999 / 164715 events processed so far, ~ 13 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 29225 (62999 / 164715 events processed so far, ~ 13 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 30225 (63999 / 164715 events processed so far, ~ 13 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 31225 (64999 / 164715 events processed so far, ~ 12 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 32225 (65999 / 164715 events processed so far, ~ 12 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 33225 (66999 / 164715 events processed so far, ~ 12 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 34225 (67999 / 164715 events processed so far, ~ 11 seconds left)
+ ( INFO  )  SCycleBaseExec     : Opening /nfs/dust/cms/group/zprime-uhh/Presel_2016/workdir_Zprime_PreSelec_2016v3_CHS/uhh2.AnalysisModuleRunner.DATA.DATA_SingleMuon_Run2016v3F_15.root
+ ( INFO  )  SCycleBaseExec     : Processing entry: 608 (68999 / 164715 events processed so far, ~ 12 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 1608 (69999 / 164715 events processed so far, ~ 12 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 2608 (70999 / 164715 events processed so far, ~ 12 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 3608 (71999 / 164715 events processed so far, ~ 12 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 4608 (72999 / 164715 events processed so far, ~ 11 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 5608 (73999 / 164715 events processed so far, ~ 11 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 6608 (74999 / 164715 events processed so far, ~ 11 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 7608 (75999 / 164715 events processed so far, ~ 11 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 8608 (76999 / 164715 events processed so far, ~ 10 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 9608 (77999 / 164715 events processed so far, ~ 11 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 10608 (78999 / 164715 events processed so far, ~ 11 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 11608 (79999 / 164715 events processed so far, ~ 11 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 12608 (80999 / 164715 events processed so far, ~ 10 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 13608 (81999 / 164715 events processed so far, ~ 10 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 14608 (82999 / 164715 events processed so far, ~ 9.8 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 15608 (83999 / 164715 events processed so far, ~ 9.6 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 16608 (84999 / 164715 events processed so far, ~ 10 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 17608 (85999 / 164715 events processed so far, ~ 10 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 18608 (86999 / 164715 events processed so far, ~ 9.8 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 19608 (87999 / 164715 events processed so far, ~ 9.6 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 20608 (88999 / 164715 events processed so far, ~ 9.4 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 21608 (89999 / 164715 events processed so far, ~ 9.1 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 22608 (90999 / 164715 events processed so far, ~ 8.9 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 23608 (91999 / 164715 events processed so far, ~ 8.7 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 24608 (92999 / 164715 events processed so far, ~ 8.5 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 25608 (93999 / 164715 events processed so far, ~ 9 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 26608 (94999 / 164715 events processed so far, ~ 8.8 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 27608 (95999 / 164715 events processed so far, ~ 8.6 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 28608 (96999 / 164715 events processed so far, ~ 8.4 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 29608 (97999 / 164715 events processed so far, ~ 8.2 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 30608 (98999 / 164715 events processed so far, ~ 8 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 31608 (99999 / 164715 events processed so far, ~ 7.8 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 32608 (100999 / 164715 events processed so far, ~ 7.6 seconds left)
+ ( INFO  )  SCycleBaseExec     : Opening /nfs/dust/cms/group/zprime-uhh/Presel_2016/workdir_Zprime_PreSelec_2016v3_CHS/uhh2.AnalysisModuleRunner.DATA.DATA_SingleMuon_Run2016v3F_16.root
+ ( INFO  )  SCycleBaseExec     : Processing entry: 429 (101999 / 164715 events processed so far, ~ 8 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 1429 (102999 / 164715 events processed so far, ~ 7.8 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 2429 (103999 / 164715 events processed so far, ~ 7.6 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 3429 (104999 / 164715 events processed so far, ~ 7.4 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 4429 (105999 / 164715 events processed so far, ~ 7.2 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 5429 (106999 / 164715 events processed so far, ~ 7 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 6429 (107999 / 164715 events processed so far, ~ 6.8 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 7429 (108999 / 164715 events processed so far, ~ 6.6 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 8429 (109999 / 164715 events processed so far, ~ 6.5 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 9429 (110999 / 164715 events processed so far, ~ 6.3 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 10429 (111999 / 164715 events processed so far, ~ 6.6 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 11429 (112999 / 164715 events processed so far, ~ 6.4 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 12429 (113999 / 164715 events processed so far, ~ 6.2 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 13429 (114999 / 164715 events processed so far, ~ 6.1 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 14429 (115999 / 164715 events processed so far, ~ 5.9 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 15429 (116999 / 164715 events processed so far, ~ 5.7 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 16429 (117999 / 164715 events processed so far, ~ 5.5 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 17429 (118999 / 164715 events processed so far, ~ 5.8 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 18429 (119999 / 164715 events processed so far, ~ 5.6 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 19429 (120999 / 164715 events processed so far, ~ 5.4 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 20429 (121999 / 164715 events processed so far, ~ 5.3 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 21429 (122999 / 164715 events processed so far, ~ 5.1 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 22429 (123999 / 164715 events processed so far, ~ 4.9 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 23429 (124999 / 164715 events processed so far, ~ 4.8 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 24429 (125999 / 164715 events processed so far, ~ 4.6 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 25429 (126999 / 164715 events processed so far, ~ 4.5 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 26429 (127999 / 164715 events processed so far, ~ 4.3 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 27429 (128999 / 164715 events processed so far, ~ 4.2 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 28429 (129999 / 164715 events processed so far, ~ 4 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 29429 (130999 / 164715 events processed so far, ~ 4.1 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 30429 (131999 / 164715 events processed so far, ~ 4 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 31429 (132999 / 164715 events processed so far, ~ 3.8 seconds left)
+ ( INFO  )  SCycleBaseExec     : Opening /nfs/dust/cms/group/zprime-uhh/Presel_2016/workdir_Zprime_PreSelec_2016v3_CHS/uhh2.AnalysisModuleRunner.DATA.DATA_SingleMuon_Run2016v3F_17.root
+ ( INFO  )  SCycleBaseExec     : Processing entry: 663 (133999 / 164715 events processed so far, ~ 3.7 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 1663 (134999 / 164715 events processed so far, ~ 3.5 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 2663 (135999 / 164715 events processed so far, ~ 3.4 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 3663 (136999 / 164715 events processed so far, ~ 3.2 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 4663 (137999 / 164715 events processed so far, ~ 3.1 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 5663 (138999 / 164715 events processed so far, ~ 3 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 6663 (139999 / 164715 events processed so far, ~ 3 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 7663 (140999 / 164715 events processed so far, ~ 2.9 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 8663 (141999 / 164715 events processed so far, ~ 2.7 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 9663 (142999 / 164715 events processed so far, ~ 2.6 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 10663 (143999 / 164715 events processed so far, ~ 2.4 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 11663 (144999 / 164715 events processed so far, ~ 2.3 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 12663 (145999 / 164715 events processed so far, ~ 2.2 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 13663 (146999 / 164715 events processed so far, ~ 2 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 14663 (147999 / 164715 events processed so far, ~ 1.9 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 15663 (148999 / 164715 events processed so far, ~ 1.8 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 16663 (149999 / 164715 events processed so far, ~ 1.8 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 17663 (150999 / 164715 events processed so far, ~ 1.6 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 18663 (151999 / 164715 events processed so far, ~ 1.5 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 19663 (152999 / 164715 events processed so far, ~ 1.4 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 20663 (153999 / 164715 events processed so far, ~ 1.3 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 21663 (154999 / 164715 events processed so far, ~ 1.1 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 22663 (155999 / 164715 events processed so far, ~ 1 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 23663 (156999 / 164715 events processed so far, ~ 0.88 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 24663 (157999 / 164715 events processed so far, ~ 0.81 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 25663 (158999 / 164715 events processed so far, ~ 0.68 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 26663 (159999 / 164715 events processed so far, ~ 0.56 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 27663 (160999 / 164715 events processed so far, ~ 0.44 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 28663 (161999 / 164715 events processed so far, ~ 0.32 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 29663 (162999 / 164715 events processed so far, ~ 0.2 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 30663 (163999 / 164715 events processed so far, ~ 0.083 seconds left)
+ ( INFO  )  SCycleBaseExec     : Terminated InputData "DATA" (Version:DATA_SingleMuon_Run2016v3F_blinded) on worker node
+ ( INFO  )  SCycleController   : Writing output of "uhh2::AnalysisModuleRunner" to: /nfs/dust/cms/user/hugobg/ZPrime_102X/analysis_output/2016_CHS/electron///fixedWP_btag_electron_2016/uhh2.AnalysisModuleRunner.DATA.DATA_SingleMuon_Run2016v3F_blinded_1.root
+ ( INFO  )  SCycleController   : Overall cycle statistics:
+ ( INFO  )  SCycleController   :     164715 Events - Real time  31.91 s  -  5161 Hz | CPU time  30.06 s  -  5480 Hz

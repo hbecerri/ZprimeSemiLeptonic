@@ -1,0 +1,114 @@
+ ( INFO  )  SCycleController   : Initializing
+ ( INFO  )  SCycleController   : Deleting all analysis cycle algorithms from memory
+ ( INFO  )  SCycleController   : Reading xml file: 'QCD_HT500to700_2016v3_1.xml'
+ ( INFO  )  SCycleController   : Created cycle 'uhh2::AnalysisModuleRunner'
+ ( INFO  )  SCycleBaseExec     : Initializing from configuration
+ ( INFO  )  SCycleBaseExec     : Reading SInputData: MC - QCD_HT500to700_2016v3
+ ( INFO  )  SCycleConfig       : ===========================================================
+ ( INFO  )  SCycleConfig       :                     Cycle configuration
+ ( INFO  )  SCycleConfig       :   - Running mode: LOCAL
+ ( INFO  )  SCycleConfig       :   - Target luminosity: 36773
+ ( INFO  )  SCycleConfig       :   - Output directory: /nfs/dust/cms/user/hugobg/ZPrime_102X/analysis_output/2016_CHS/electron///fixedWP_btag_electron_2016/
+ ( INFO  )  SCycleConfig       :   - Post-fix: _0
+ ( INFO  )  SInputData         :  ---------------------------------------------------------
+ ( INFO  )  SInputData         :  Type               : MC
+ ( INFO  )  SInputData         :  Version            : QCD_HT500to700_2016v3
+ ( INFO  )  SInputData         :  Total luminosity   : 1648.18pb-1
+ ( INFO  )  SInputData         :  NEventsMax         : -1
+ ( INFO  )  SInputData         :  NEventsSkip        : 0
+ ( INFO  )  SInputData         :  Cacheable          : No
+ ( INFO  )  SInputData         :  Skip validation    : No
+ ( INFO  )  SInputData         :  Skip file lookup   : No
+ ( INFO  )  SInputData         :  Input File         : '/nfs/dust/cms/group/zprime-uhh/Presel_2016/workdir_Zprime_PreSelec_2016v3_CHS/uhh2.AnalysisModuleRunner.MC.QCD_HT500to700_2016v3_0.root' (file) | '0' (lumi)
+ ( INFO  )  SInputData         :  Input File         : '/nfs/dust/cms/group/zprime-uhh/Presel_2016/workdir_Zprime_PreSelec_2016v3_CHS/uhh2.AnalysisModuleRunner.MC.QCD_HT500to700_2016v3_1.root' (file) | '0' (lumi)
+ ( INFO  )  SInputData         :  Input File         : '/nfs/dust/cms/group/zprime-uhh/Presel_2016/workdir_Zprime_PreSelec_2016v3_CHS/uhh2.AnalysisModuleRunner.MC.QCD_HT500to700_2016v3_10.root' (file) | '0' (lumi)
+ ( INFO  )  SInputData         :  Input File         : '/nfs/dust/cms/group/zprime-uhh/Presel_2016/workdir_Zprime_PreSelec_2016v3_CHS/uhh2.AnalysisModuleRunner.MC.QCD_HT500to700_2016v3_11.root' (file) | '0' (lumi)
+ ( INFO  )  SInputData         :  Input File         : '/nfs/dust/cms/group/zprime-uhh/Presel_2016/workdir_Zprime_PreSelec_2016v3_CHS/uhh2.AnalysisModuleRunner.MC.QCD_HT500to700_2016v3_12.root' (file) | '0' (lumi)
+ ( INFO  )  SInputData         :  Tree               : 'AnalysisTree' (name) | 'Flat input tree' (type)
+ ( INFO  )  SInputData         :  Tree               : 'AnalysisTree' (name) | 'Flat output tree' (type)
+ ( INFO  )  SInputData         :  ---------------------------------------------------------
+ ( INFO  )  SCycleConfig       : ===========================================================
+ ( INFO  )  SCycleController   : Job 'ZprimePreselectionJob' configured
+ ( INFO  )  SCycleController   : Time needed for initialisation:   0.72 s
+ ( INFO  )  SCycleController   : Entering ExecuteAllCycles()
+ ( INFO  )  SInputData         : Input type "MC" version "QCD_HT500to700_2016v3" : 25345 events
+ ( INFO  )  SCycleController   : Executing Cycle #0 ('uhh2::AnalysisModuleRunner') locally
+ ( INFO  )  SCycleController   : Processing input data type: MC version: QCD_HT500to700_2016v3
+ ( INFO  )  SCycleBaseExec     : Initialised InputData "MC" (Version:QCD_HT500to700_2016v3) on worker node
+ AnalysisModule = ZprimeAnalysisModule
+ BTagCalibration = /nfs/dust/cms/user/hugobg/UHH2_v2/CMSSW_10_2_17/src/UHH2/common/data/2016/DeepJet_2016LegacySF_V1_YearCorrelation-V1.csv
+ ElectronCollection = slimmedElectronsUSER
+ GenJetCollection = slimmedGenJets
+ GenParticleCollection = GenParticles
+ GenTopJetCollection = genjetsAk8SubstructureSoftDrop
+ JetCollection = jetsAk4CHS
+ MCBtagEfficiencies = /nfs/dust/cms/user/hugobg/UHH2_v2/CMSSW_10_2_17/src/UHH2/common/data/2016/BTagMCEfficiencyHists_electron2016.root
+ METName = slimmedMETsPuppi
+ MuonCollection = slimmedMuonsUSER
+ PrimaryVertexCollection = offlineSlimmedPrimaryVertices
+ ScaleVariationMuF = nominal
+ ScaleVariationMuR = nominal
+ Sys_BTagSF = central
+ Sys_EleID = nominal
+ Sys_EleTrigger = nominal
+ Sys_MuonID = nominal
+ Sys_MuonTrigger = nominal
+ Sys_PU = central
+ Sys_btag = central
+ TopJetCollection = jetsAk8CHSSubstructure_SoftDropCHS
+ TopPuppiJetCollection = jetsAk8PuppiSubstructure_SoftDropPuppi
+ channel = electron
+ dataset_lumi = 1.648179190000000062e+03
+ dataset_type = MC
+ dataset_version = QCD_HT500to700_2016v3
+ genMETName = slimmedMETs_GenMET
+ is_looser_selection = false
+ is_puppi = true
+ jecsmear_direction = nominal
+ jersmear_direction = nominal
+ lumi_file = /nfs/dust/cms/user/hugobg/UHH2/CMSSW_10_2_10/src/UHH2/common/data/2016/Cert_271036-284044_13TeV_23Sep2016ReReco_Collisions16_JSON.root
+ lumihists_lumi_per_bin = 500.0
+ meta_jer_applied__jets = true
+ meta_jer_applied__topjets = true
+ meta_jer_applied__toppuppijets = true
+ n_events_total = 2.534500000000000000e+04
+ pileup_directory = /nfs/dust/cms/user/hugobg/UHH2/CMSSW_10_2_10/src/UHH2/common/data/2016/MyMCPileupHistogram.root
+ pileup_directory_data = /nfs/dust/cms/user/hugobg/UHH2/CMSSW_10_2_10/src/UHH2/common/data/2016/MyDataPileupHistogram.root
+ pileup_directory_data_down = /nfs/dust/cms/user/hugobg/UHH2/CMSSW_10_2_10/src/UHH2/common/data/2016/MyDataPileupHistogram_66017.root
+ pileup_directory_data_up = /nfs/dust/cms/user/hugobg/UHH2/CMSSW_10_2_10/src/UHH2/common/data/2016/MyDataPileupHistogram_72383.root
+ target_lumi = 3.677300000000000000e+04
+ use_sframe_weight = false
+ ( INFO  )  SCycleBaseExec     : Opening /nfs/dust/cms/group/zprime-uhh/Presel_2016/workdir_Zprime_PreSelec_2016v3_CHS/uhh2.AnalysisModuleRunner.MC.QCD_HT500to700_2016v3_0.root
+ ( INFO  )  SCycleBaseExec     : Processing entry: 999 (999 / 25345 events processed so far, ~ 49 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 1999 (1999 / 25345 events processed so far, ~ 35 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 2999 (2999 / 25345 events processed so far, ~ 22 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 3999 (3999 / 25345 events processed so far, ~ 16 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 4999 (4999 / 25345 events processed so far, ~ 12 seconds left)
+ ( INFO  )  SCycleBaseExec     : Opening /nfs/dust/cms/group/zprime-uhh/Presel_2016/workdir_Zprime_PreSelec_2016v3_CHS/uhh2.AnalysisModuleRunner.MC.QCD_HT500to700_2016v3_1.root
+ ( INFO  )  SCycleBaseExec     : Processing entry: 975 (5999 / 25345 events processed so far, ~ 9.7 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 1975 (6999 / 25345 events processed so far, ~ 7.9 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 2975 (7999 / 25345 events processed so far, ~ 8.7 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 3975 (8999 / 25345 events processed so far, ~ 7.3 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 4975 (9999 / 25345 events processed so far, ~ 6.1 seconds left)
+ ( INFO  )  SCycleBaseExec     : Opening /nfs/dust/cms/group/zprime-uhh/Presel_2016/workdir_Zprime_PreSelec_2016v3_CHS/uhh2.AnalysisModuleRunner.MC.QCD_HT500to700_2016v3_10.root
+ ( INFO  )  SCycleBaseExec     : Processing entry: 858 (10999 / 25345 events processed so far, ~ 5.2 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 1858 (11999 / 25345 events processed so far, ~ 4.4 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 2858 (12999 / 25345 events processed so far, ~ 4.7 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 3858 (13999 / 25345 events processed so far, ~ 4.1 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 4858 (14999 / 25345 events processed so far, ~ 3.4 seconds left)
+ ( INFO  )  SCycleBaseExec     : Opening /nfs/dust/cms/group/zprime-uhh/Presel_2016/workdir_Zprime_PreSelec_2016v3_CHS/uhh2.AnalysisModuleRunner.MC.QCD_HT500to700_2016v3_11.root
+ ( INFO  )  SCycleBaseExec     : Processing entry: 869 (15999 / 25345 events processed so far, ~ 2.9 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 1869 (16999 / 25345 events processed so far, ~ 2.5 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 2869 (17999 / 25345 events processed so far, ~ 2 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 3869 (18999 / 25345 events processed so far, ~ 2 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 4869 (19999 / 25345 events processed so far, ~ 1.6 seconds left)
+ ( INFO  )  SCycleBaseExec     : Opening /nfs/dust/cms/group/zprime-uhh/Presel_2016/workdir_Zprime_PreSelec_2016v3_CHS/uhh2.AnalysisModuleRunner.MC.QCD_HT500to700_2016v3_12.root
+ ( INFO  )  SCycleBaseExec     : Processing entry: 730 (20999 / 25345 events processed so far, ~ 1.2 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 1730 (21999 / 25345 events processed so far, ~ 0.91 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 2730 (22999 / 25345 events processed so far, ~ 0.61 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 3730 (23999 / 25345 events processed so far, ~ 0.39 seconds left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 4730 (24999 / 25345 events processed so far, ~ 0.097 seconds left)
+ ( INFO  )  SCycleBaseExec     : Terminated InputData "MC" (Version:QCD_HT500to700_2016v3) on worker node
+ ( INFO  )  SCycleController   : Writing output of "uhh2::AnalysisModuleRunner" to: /nfs/dust/cms/user/hugobg/ZPrime_102X/analysis_output/2016_CHS/electron///fixedWP_btag_electron_2016/uhh2.AnalysisModuleRunner.MC.QCD_HT500to700_2016v3_0.root
+ ( INFO  )  SCycleController   : Overall cycle statistics:
+ ( INFO  )  SCycleController   :      25345 Events - Real time  14.34 s  -  1767 Hz | CPU time  11.99 s  -  2114 Hz

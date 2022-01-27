@@ -78,7 +78,9 @@ protected:
   std::unique_ptr<Hists> hist_BTagMCEfficiency;
    
   // AnalysisModules
-  unique_ptr<AnalysisModule> LumiWeight_module, PUWeight_module, printer_genparticles, BTagWeight_module, TopPtReweight_module, MCScale_module;
+  unique_ptr<AnalysisModule> LumiWeight_module, PUWeight_module, printer_genparticles, TopPtReweight_module, MCScale_module; 
+
+//BTagWeight_module, TopPtReweight_module, MCScale_module;
 
   // Taggers
   unique_ptr<AK8PuppiTopTagger> TopTaggerPuppi;
@@ -253,8 +255,10 @@ ZprimeAnalysisModule::ZprimeAnalysisModule(uhh2::Context& ctx){
   Sys_EleID = ctx.get("Sys_EleID");
   Sys_EleTrigger = ctx.get("Sys_EleTrigger");
   Sys_PU = ctx.get("Sys_PU");
-//  Sys_btag = ctx.get("Sys_btag");
-  Sys_btag = ctx.get("Sys_BTagSF");
+  Sys_btag = ctx.get("Sys_btag");
+
+//iterativefit
+//  Sys_btag = ctx.get("Sys_BTagSF");
 
   BTag::algo btag_algo = BTag::DEEPJET;
   BTag::wp btag_wp = BTag::WP_TIGHT;
@@ -269,9 +273,12 @@ ZprimeAnalysisModule::ZprimeAnalysisModule(uhh2::Context& ctx){
   electron_cleaner.reset(new ElectronCleaner(electronID));
   LumiWeight_module.reset(new MCLumiWeight(ctx));
   PUWeight_module.reset(new MCPileupReweight(ctx, Sys_PU));
+  
 //  hist_BTagMCEfficiency.reset(new BTagMCEfficiencyHists(ctx,"BTagMCEfficiency", id_btag));
-//  sf_btag.reset(new MCBTagScaleFactor(ctx, btag_algo, btag_wp, "jets", ctx.get("Sys_btag", "nominal"), "comb", "incl", "MCBtagEfficiencies"));
-  BTagWeight_module.reset(new MCBTagDiscriminantReweighting(ctx, btag_algo, "jets", Sys_btag));
+  sf_btag.reset(new MCBTagScaleFactor(ctx, btag_algo, btag_wp, "jets", ctx.get("Sys_btag", "nominal"), "comb", "incl", "MCBtagEfficiencies"));
+
+//iterativefit
+//  BTagWeight_module.reset(new MCBTagDiscriminantReweighting(ctx, btag_algo, "jets", Sys_btag));
   TopPtReweight_module.reset(new TopPtReweight(ctx, a_toppt, b_toppt));
   MCScale_module.reset(new MCScaleVariation(ctx));
 
@@ -545,9 +552,14 @@ bool ZprimeAnalysisModule::process(uhh2::Event& event){
     if(debug)  cout<<"MCsCWeight ok"<<endl;
   fill_histograms(event, "Weights_MCScale");
  
-  BTagWeight_module->process(event);
+//iterativefit
+//  BTagWeight_module->process(event);
 //  if(isMC) hist_BTagMCEfficiency->fill(event);
-//  sf_btag->process(event);
+
+//fixedWP 
+
+  sf_btag->process(event);
+
   if(!(Trigger1_selection->passes(event)|| Trigger2_selection->passes(event))) return false;
   if(isMuon){
     if(!NMuon1_selection->passes(event)) return false;

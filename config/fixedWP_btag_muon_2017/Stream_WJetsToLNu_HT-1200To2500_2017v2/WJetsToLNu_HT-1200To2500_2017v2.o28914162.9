@@ -1,0 +1,1076 @@
+ ( INFO  )  SCycleController   : Initializing
+ ( INFO  )  SCycleController   : Deleting all analysis cycle algorithms from memory
+ ( INFO  )  SCycleController   : Reading xml file: 'WJetsToLNu_HT-1200To2500_2017v2_10.xml'
+ ( INFO  )  SCycleController   : Created cycle 'uhh2::AnalysisModuleRunner'
+ ( INFO  )  SCycleBaseExec     : Initializing from configuration
+ ( INFO  )  SCycleBaseExec     : Reading SInputData: MC - WJetsToLNu_HT-1200To2500_2017v2
+ ( INFO  )  SCycleConfig       : ===========================================================
+ ( INFO  )  SCycleConfig       :                     Cycle configuration
+ ( INFO  )  SCycleConfig       :   - Running mode: LOCAL
+ ( INFO  )  SCycleConfig       :   - Target luminosity: 41557
+ ( INFO  )  SCycleConfig       :   - Output directory: /nfs/dust/cms/user/hugobg/ZPrime_102X/analysis_output/2017_CHS/muon///fixedWP_btag_muon_2017/
+ ( INFO  )  SCycleConfig       :   - Post-fix: _9
+ ( INFO  )  SInputData         :  ---------------------------------------------------------
+ ( INFO  )  SInputData         :  Type               : MC
+ ( INFO  )  SInputData         :  Version            : WJetsToLNu_HT-1200To2500_2017v2
+ ( INFO  )  SInputData         :  Total luminosity   : 1.84747e+07pb-1
+ ( INFO  )  SInputData         :  NEventsMax         : -1
+ ( INFO  )  SInputData         :  NEventsSkip        : 0
+ ( INFO  )  SInputData         :  Cacheable          : No
+ ( INFO  )  SInputData         :  Skip validation    : No
+ ( INFO  )  SInputData         :  Skip file lookup   : No
+ ( INFO  )  SInputData         :  Input File         : '/nfs/dust/cms/group/zprime-uhh/Presel_2017_CHS/workdir_Zprime_PreSelec_2017/uhh2.AnalysisModuleRunner.MC.WJetsToLNu_HT-1200To2500_2017v2_5.root' (file) | '0' (lumi)
+ ( INFO  )  SInputData         :  Input File         : '/nfs/dust/cms/group/zprime-uhh/Presel_2017_CHS/workdir_Zprime_PreSelec_2017/uhh2.AnalysisModuleRunner.MC.WJetsToLNu_HT-1200To2500_2017v2_50.root' (file) | '0' (lumi)
+ ( INFO  )  SInputData         :  Input File         : '/nfs/dust/cms/group/zprime-uhh/Presel_2017_CHS/workdir_Zprime_PreSelec_2017/uhh2.AnalysisModuleRunner.MC.WJetsToLNu_HT-1200To2500_2017v2_51.root' (file) | '0' (lumi)
+ ( INFO  )  SInputData         :  Input File         : '/nfs/dust/cms/group/zprime-uhh/Presel_2017_CHS/workdir_Zprime_PreSelec_2017/uhh2.AnalysisModuleRunner.MC.WJetsToLNu_HT-1200To2500_2017v2_52.root' (file) | '0' (lumi)
+ ( INFO  )  SInputData         :  Input File         : '/nfs/dust/cms/group/zprime-uhh/Presel_2017_CHS/workdir_Zprime_PreSelec_2017/uhh2.AnalysisModuleRunner.MC.WJetsToLNu_HT-1200To2500_2017v2_53.root' (file) | '0' (lumi)
+ ( INFO  )  SInputData         :  Tree               : 'AnalysisTree' (name) | 'Flat input tree' (type)
+ ( INFO  )  SInputData         :  Tree               : 'AnalysisTree' (name) | 'Flat output tree' (type)
+ ( INFO  )  SInputData         :  ---------------------------------------------------------
+ ( INFO  )  SCycleConfig       : ===========================================================
+ ( INFO  )  SCycleController   : Job 'ZprimePreselectionJob' configured
+ ( INFO  )  SCycleController   : Time needed for initialisation:    0.6 s
+ ( INFO  )  SCycleController   : Entering ExecuteAllCycles()
+ ( INFO  )  SInputData         : Input type "MC" version "WJetsToLNu_HT-1200To2500_2017v2" : 649290 events
+ ( INFO  )  SCycleController   : Executing Cycle #0 ('uhh2::AnalysisModuleRunner') locally
+ ( INFO  )  SCycleController   : Processing input data type: MC version: WJetsToLNu_HT-1200To2500_2017v2
+ ( INFO  )  SCycleBaseExec     : Initialised InputData "MC" (Version:WJetsToLNu_HT-1200To2500_2017v2) on worker node
+ AnalysisModule = ZprimeAnalysisModule
+ BTagCalibration = /nfs/dust/cms/user/hugobg/UHH2_v2/CMSSW_10_2_17/src/UHH2/common/data/2018/DeepJet_102XSF_V1_YearCorrelation-V1.csv
+ ElectronCollection = slimmedElectronsUSER
+ GenJetCollection = slimmedGenJets
+ GenParticleCollection = GenParticles
+ GenTopJetCollection = genjetsAk8SubstructureSoftDrop
+ JetCollection = jetsAk4CHS
+ MCBtagEfficiencies = /nfs/dust/cms/user/hugobg/UHH2_v2/CMSSW_10_2_17/src/UHH2/common/data/2017/BTagMCEfficiencyHists_muon2017.root
+ METName = slimmedMETsPuppi
+ MuonCollection = slimmedMuonsUSER
+ PrimaryVertexCollection = offlineSlimmedPrimaryVertices
+ ScaleVariationMuF = nominal
+ ScaleVariationMuR = nominal
+ Sys_BTagSF = nominal
+ Sys_EleID = nominal
+ Sys_EleTrigger = nominal
+ Sys_MuonID = nominal
+ Sys_MuonTrigger = nominal
+ Sys_PU = central
+ Sys_btag = central
+ TopJetCollection = jetsAk8CHSSubstructure_SoftDropCHS
+ TopPuppiJetCollection = jetsAk8PuppiSubstructure_SoftDropPuppi
+ channel = muon
+ dataset_lumi = 1.847474814999999851e+07
+ dataset_type = MC
+ dataset_version = WJetsToLNu_HT-1200To2500_2017v2
+ genMETName = slimmedMETs_GenMET
+ is_looser_selection = false
+ is_puppi = true
+ jecsmear_direction = nominal
+ jersmear_direction = nominal
+ lumi_file = /nfs/dust/cms/user/hugobg/UHH2_v2/CMSSW_10_2_17/src/UHH2/common/data/2017/Cert_314472-325175_13TeV_PromptReco_Collisions18_JSON.root
+ lumihists_lumi_per_bin = 500.0
+ meta_jer_applied__jets = true
+ meta_jer_applied__topjets = true
+ meta_jer_applied__toppuppijets = true
+ n_events_total = 6.492900000000000000e+05
+ pileup_directory = /nfs/dust/cms/user/hugobg/UHH2_v2/CMSSW_10_2_17/src/UHH2/common/data/2017/MyMCPileupHistogram.root
+ pileup_directory_data = /nfs/dust/cms/user/hugobg/UHH2_v2/CMSSW_10_2_17/src/UHH2/common/data/2017/MyDataPileupHistogram2017.root
+ pileup_directory_data_down = /nfs/dust/cms/user/hugobg/UHH2_v2/CMSSW_10_2_17/src/UHH2/common/data/2017/MyDataPileupHistogram2017_66017.root
+ pileup_directory_data_up = /nfs/dust/cms/user/hugobg/UHH2_v2/CMSSW_10_2_17/src/UHH2/common/data/2017/MyDataPileupHistogram2017_72383.root
+ target_lumi = 4.155700000000000000e+04
+ use_sframe_weight = false
+ ( INFO  )  SCycleBaseExec     : Opening /nfs/dust/cms/group/zprime-uhh/Presel_2017_CHS/workdir_Zprime_PreSelec_2017/uhh2.AnalysisModuleRunner.MC.WJetsToLNu_HT-1200To2500_2017v2_5.root
+ ( INFO  )  SCycleBaseExec     : Processing entry: 999 (999 / 649290 events processed so far, ~ 1.3 hours left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 1999 (1999 / 649290 events processed so far, ~ 54 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 2999 (2999 / 649290 events processed so far, ~ 43 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 3999 (3999 / 649290 events processed so far, ~ 43 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 4999 (4999 / 649290 events processed so far, ~ 41 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 5999 (5999 / 649290 events processed so far, ~ 39 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 6999 (6999 / 649290 events processed so far, ~ 38 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 7999 (7999 / 649290 events processed so far, ~ 36 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 8999 (8999 / 649290 events processed so far, ~ 36 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 9999 (9999 / 649290 events processed so far, ~ 35 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 10999 (10999 / 649290 events processed so far, ~ 35 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 11999 (11999 / 649290 events processed so far, ~ 35 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 12999 (12999 / 649290 events processed so far, ~ 34 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 13999 (13999 / 649290 events processed so far, ~ 35 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 14999 (14999 / 649290 events processed so far, ~ 34 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 15999 (15999 / 649290 events processed so far, ~ 34 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 16999 (16999 / 649290 events processed so far, ~ 33 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 17999 (17999 / 649290 events processed so far, ~ 33 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 18999 (18999 / 649290 events processed so far, ~ 34 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 19999 (19999 / 649290 events processed so far, ~ 34 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 20999 (20999 / 649290 events processed so far, ~ 34 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 21999 (21999 / 649290 events processed so far, ~ 33 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 22999 (22999 / 649290 events processed so far, ~ 33 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 23999 (23999 / 649290 events processed so far, ~ 32 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 24999 (24999 / 649290 events processed so far, ~ 32 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 25999 (25999 / 649290 events processed so far, ~ 32 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 26999 (26999 / 649290 events processed so far, ~ 31 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 27999 (27999 / 649290 events processed so far, ~ 31 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 28999 (28999 / 649290 events processed so far, ~ 31 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 29999 (29999 / 649290 events processed so far, ~ 30 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 30999 (30999 / 649290 events processed so far, ~ 30 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 31999 (31999 / 649290 events processed so far, ~ 30 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 32999 (32999 / 649290 events processed so far, ~ 30 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 33999 (33999 / 649290 events processed so far, ~ 30 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 34999 (34999 / 649290 events processed so far, ~ 30 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 35999 (35999 / 649290 events processed so far, ~ 29 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 36999 (36999 / 649290 events processed so far, ~ 29 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 37999 (37999 / 649290 events processed so far, ~ 29 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 38999 (38999 / 649290 events processed so far, ~ 29 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 39999 (39999 / 649290 events processed so far, ~ 29 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 40999 (40999 / 649290 events processed so far, ~ 28 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 41999 (41999 / 649290 events processed so far, ~ 28 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 42999 (42999 / 649290 events processed so far, ~ 28 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 43999 (43999 / 649290 events processed so far, ~ 28 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 44999 (44999 / 649290 events processed so far, ~ 28 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 45999 (45999 / 649290 events processed so far, ~ 28 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 46999 (46999 / 649290 events processed so far, ~ 28 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 47999 (47999 / 649290 events processed so far, ~ 28 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 48999 (48999 / 649290 events processed so far, ~ 27 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 49999 (49999 / 649290 events processed so far, ~ 27 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 50999 (50999 / 649290 events processed so far, ~ 27 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 51999 (51999 / 649290 events processed so far, ~ 27 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 52999 (52999 / 649290 events processed so far, ~ 26 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 53999 (53999 / 649290 events processed so far, ~ 26 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 54999 (54999 / 649290 events processed so far, ~ 26 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 55999 (55999 / 649290 events processed so far, ~ 26 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 56999 (56999 / 649290 events processed so far, ~ 26 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 57999 (57999 / 649290 events processed so far, ~ 26 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 58999 (58999 / 649290 events processed so far, ~ 26 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 59999 (59999 / 649290 events processed so far, ~ 26 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 60999 (60999 / 649290 events processed so far, ~ 26 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 61999 (61999 / 649290 events processed so far, ~ 26 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 62999 (62999 / 649290 events processed so far, ~ 25 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 63999 (63999 / 649290 events processed so far, ~ 25 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 64999 (64999 / 649290 events processed so far, ~ 25 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 65999 (65999 / 649290 events processed so far, ~ 25 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 66999 (66999 / 649290 events processed so far, ~ 25 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 67999 (67999 / 649290 events processed so far, ~ 25 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 68999 (68999 / 649290 events processed so far, ~ 25 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 69999 (69999 / 649290 events processed so far, ~ 25 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 70999 (70999 / 649290 events processed so far, ~ 25 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 71999 (71999 / 649290 events processed so far, ~ 25 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 72999 (72999 / 649290 events processed so far, ~ 24 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 73999 (73999 / 649290 events processed so far, ~ 24 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 74999 (74999 / 649290 events processed so far, ~ 24 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 75999 (75999 / 649290 events processed so far, ~ 24 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 76999 (76999 / 649290 events processed so far, ~ 24 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 77999 (77999 / 649290 events processed so far, ~ 24 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 78999 (78999 / 649290 events processed so far, ~ 24 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 79999 (79999 / 649290 events processed so far, ~ 24 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 80999 (80999 / 649290 events processed so far, ~ 24 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 81999 (81999 / 649290 events processed so far, ~ 24 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 82999 (82999 / 649290 events processed so far, ~ 24 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 83999 (83999 / 649290 events processed so far, ~ 24 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 84999 (84999 / 649290 events processed so far, ~ 23 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 85999 (85999 / 649290 events processed so far, ~ 23 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 86999 (86999 / 649290 events processed so far, ~ 23 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 87999 (87999 / 649290 events processed so far, ~ 23 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 88999 (88999 / 649290 events processed so far, ~ 24 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 89999 (89999 / 649290 events processed so far, ~ 24 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 90999 (90999 / 649290 events processed so far, ~ 24 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 91999 (91999 / 649290 events processed so far, ~ 23 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 92999 (92999 / 649290 events processed so far, ~ 23 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 93999 (93999 / 649290 events processed so far, ~ 23 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 94999 (94999 / 649290 events processed so far, ~ 23 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 95999 (95999 / 649290 events processed so far, ~ 23 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 96999 (96999 / 649290 events processed so far, ~ 23 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 97999 (97999 / 649290 events processed so far, ~ 23 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 98999 (98999 / 649290 events processed so far, ~ 23 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 99999 (99999 / 649290 events processed so far, ~ 23 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 100999 (100999 / 649290 events processed so far, ~ 23 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 101999 (101999 / 649290 events processed so far, ~ 23 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 102999 (102999 / 649290 events processed so far, ~ 22 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 103999 (103999 / 649290 events processed so far, ~ 22 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 104999 (104999 / 649290 events processed so far, ~ 22 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 105999 (105999 / 649290 events processed so far, ~ 22 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 106999 (106999 / 649290 events processed so far, ~ 22 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 107999 (107999 / 649290 events processed so far, ~ 22 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 108999 (108999 / 649290 events processed so far, ~ 22 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 109999 (109999 / 649290 events processed so far, ~ 22 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 110999 (110999 / 649290 events processed so far, ~ 22 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 111999 (111999 / 649290 events processed so far, ~ 22 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 112999 (112999 / 649290 events processed so far, ~ 22 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 113999 (113999 / 649290 events processed so far, ~ 22 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 114999 (114999 / 649290 events processed so far, ~ 22 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 115999 (115999 / 649290 events processed so far, ~ 22 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 116999 (116999 / 649290 events processed so far, ~ 22 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 117999 (117999 / 649290 events processed so far, ~ 22 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 118999 (118999 / 649290 events processed so far, ~ 22 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 119999 (119999 / 649290 events processed so far, ~ 22 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 120999 (120999 / 649290 events processed so far, ~ 21 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 121999 (121999 / 649290 events processed so far, ~ 21 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 122999 (122999 / 649290 events processed so far, ~ 21 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 123999 (123999 / 649290 events processed so far, ~ 21 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 124999 (124999 / 649290 events processed so far, ~ 21 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 125999 (125999 / 649290 events processed so far, ~ 21 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 126999 (126999 / 649290 events processed so far, ~ 21 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 127999 (127999 / 649290 events processed so far, ~ 21 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 128999 (128999 / 649290 events processed so far, ~ 21 minutes left)
+ ( INFO  )  SCycleBaseExec     : Opening /nfs/dust/cms/group/zprime-uhh/Presel_2017_CHS/workdir_Zprime_PreSelec_2017/uhh2.AnalysisModuleRunner.MC.WJetsToLNu_HT-1200To2500_2017v2_50.root
+ ( INFO  )  SCycleBaseExec     : Processing entry: 247 (129999 / 649290 events processed so far, ~ 21 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 1247 (130999 / 649290 events processed so far, ~ 21 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 2247 (131999 / 649290 events processed so far, ~ 21 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 3247 (132999 / 649290 events processed so far, ~ 21 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 4247 (133999 / 649290 events processed so far, ~ 21 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 5247 (134999 / 649290 events processed so far, ~ 21 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 6247 (135999 / 649290 events processed so far, ~ 21 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 7247 (136999 / 649290 events processed so far, ~ 21 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 8247 (137999 / 649290 events processed so far, ~ 21 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 9247 (138999 / 649290 events processed so far, ~ 21 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 10247 (139999 / 649290 events processed so far, ~ 21 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 11247 (140999 / 649290 events processed so far, ~ 21 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 12247 (141999 / 649290 events processed so far, ~ 21 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 13247 (142999 / 649290 events processed so far, ~ 21 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 14247 (143999 / 649290 events processed so far, ~ 21 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 15247 (144999 / 649290 events processed so far, ~ 21 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 16247 (145999 / 649290 events processed so far, ~ 21 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 17247 (146999 / 649290 events processed so far, ~ 21 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 18247 (147999 / 649290 events processed so far, ~ 21 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 19247 (148999 / 649290 events processed so far, ~ 20 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 20247 (149999 / 649290 events processed so far, ~ 20 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 21247 (150999 / 649290 events processed so far, ~ 20 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 22247 (151999 / 649290 events processed so far, ~ 20 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 23247 (152999 / 649290 events processed so far, ~ 20 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 24247 (153999 / 649290 events processed so far, ~ 20 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 25247 (154999 / 649290 events processed so far, ~ 20 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 26247 (155999 / 649290 events processed so far, ~ 20 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 27247 (156999 / 649290 events processed so far, ~ 20 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 28247 (157999 / 649290 events processed so far, ~ 20 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 29247 (158999 / 649290 events processed so far, ~ 20 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 30247 (159999 / 649290 events processed so far, ~ 20 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 31247 (160999 / 649290 events processed so far, ~ 20 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 32247 (161999 / 649290 events processed so far, ~ 20 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 33247 (162999 / 649290 events processed so far, ~ 20 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 34247 (163999 / 649290 events processed so far, ~ 20 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 35247 (164999 / 649290 events processed so far, ~ 20 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 36247 (165999 / 649290 events processed so far, ~ 20 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 37247 (166999 / 649290 events processed so far, ~ 20 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 38247 (167999 / 649290 events processed so far, ~ 20 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 39247 (168999 / 649290 events processed so far, ~ 20 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 40247 (169999 / 649290 events processed so far, ~ 20 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 41247 (170999 / 649290 events processed so far, ~ 20 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 42247 (171999 / 649290 events processed so far, ~ 20 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 43247 (172999 / 649290 events processed so far, ~ 19 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 44247 (173999 / 649290 events processed so far, ~ 19 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 45247 (174999 / 649290 events processed so far, ~ 19 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 46247 (175999 / 649290 events processed so far, ~ 19 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 47247 (176999 / 649290 events processed so far, ~ 19 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 48247 (177999 / 649290 events processed so far, ~ 19 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 49247 (178999 / 649290 events processed so far, ~ 19 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 50247 (179999 / 649290 events processed so far, ~ 19 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 51247 (180999 / 649290 events processed so far, ~ 19 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 52247 (181999 / 649290 events processed so far, ~ 19 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 53247 (182999 / 649290 events processed so far, ~ 19 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 54247 (183999 / 649290 events processed so far, ~ 19 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 55247 (184999 / 649290 events processed so far, ~ 19 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 56247 (185999 / 649290 events processed so far, ~ 19 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 57247 (186999 / 649290 events processed so far, ~ 19 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 58247 (187999 / 649290 events processed so far, ~ 19 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 59247 (188999 / 649290 events processed so far, ~ 19 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 60247 (189999 / 649290 events processed so far, ~ 19 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 61247 (190999 / 649290 events processed so far, ~ 19 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 62247 (191999 / 649290 events processed so far, ~ 18 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 63247 (192999 / 649290 events processed so far, ~ 18 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 64247 (193999 / 649290 events processed so far, ~ 18 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 65247 (194999 / 649290 events processed so far, ~ 18 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 66247 (195999 / 649290 events processed so far, ~ 18 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 67247 (196999 / 649290 events processed so far, ~ 18 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 68247 (197999 / 649290 events processed so far, ~ 18 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 69247 (198999 / 649290 events processed so far, ~ 18 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 70247 (199999 / 649290 events processed so far, ~ 18 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 71247 (200999 / 649290 events processed so far, ~ 18 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 72247 (201999 / 649290 events processed so far, ~ 18 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 73247 (202999 / 649290 events processed so far, ~ 18 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 74247 (203999 / 649290 events processed so far, ~ 18 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 75247 (204999 / 649290 events processed so far, ~ 18 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 76247 (205999 / 649290 events processed so far, ~ 18 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 77247 (206999 / 649290 events processed so far, ~ 18 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 78247 (207999 / 649290 events processed so far, ~ 18 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 79247 (208999 / 649290 events processed so far, ~ 18 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 80247 (209999 / 649290 events processed so far, ~ 18 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 81247 (210999 / 649290 events processed so far, ~ 18 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 82247 (211999 / 649290 events processed so far, ~ 17 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 83247 (212999 / 649290 events processed so far, ~ 17 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 84247 (213999 / 649290 events processed so far, ~ 17 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 85247 (214999 / 649290 events processed so far, ~ 17 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 86247 (215999 / 649290 events processed so far, ~ 17 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 87247 (216999 / 649290 events processed so far, ~ 17 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 88247 (217999 / 649290 events processed so far, ~ 17 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 89247 (218999 / 649290 events processed so far, ~ 17 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 90247 (219999 / 649290 events processed so far, ~ 17 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 91247 (220999 / 649290 events processed so far, ~ 17 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 92247 (221999 / 649290 events processed so far, ~ 17 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 93247 (222999 / 649290 events processed so far, ~ 17 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 94247 (223999 / 649290 events processed so far, ~ 17 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 95247 (224999 / 649290 events processed so far, ~ 17 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 96247 (225999 / 649290 events processed so far, ~ 17 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 97247 (226999 / 649290 events processed so far, ~ 17 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 98247 (227999 / 649290 events processed so far, ~ 17 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 99247 (228999 / 649290 events processed so far, ~ 17 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 100247 (229999 / 649290 events processed so far, ~ 17 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 101247 (230999 / 649290 events processed so far, ~ 17 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 102247 (231999 / 649290 events processed so far, ~ 17 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 103247 (232999 / 649290 events processed so far, ~ 16 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 104247 (233999 / 649290 events processed so far, ~ 16 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 105247 (234999 / 649290 events processed so far, ~ 16 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 106247 (235999 / 649290 events processed so far, ~ 16 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 107247 (236999 / 649290 events processed so far, ~ 16 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 108247 (237999 / 649290 events processed so far, ~ 16 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 109247 (238999 / 649290 events processed so far, ~ 16 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 110247 (239999 / 649290 events processed so far, ~ 16 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 111247 (240999 / 649290 events processed so far, ~ 16 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 112247 (241999 / 649290 events processed so far, ~ 16 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 113247 (242999 / 649290 events processed so far, ~ 16 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 114247 (243999 / 649290 events processed so far, ~ 16 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 115247 (244999 / 649290 events processed so far, ~ 16 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 116247 (245999 / 649290 events processed so far, ~ 16 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 117247 (246999 / 649290 events processed so far, ~ 16 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 118247 (247999 / 649290 events processed so far, ~ 16 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 119247 (248999 / 649290 events processed so far, ~ 16 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 120247 (249999 / 649290 events processed so far, ~ 16 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 121247 (250999 / 649290 events processed so far, ~ 16 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 122247 (251999 / 649290 events processed so far, ~ 16 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 123247 (252999 / 649290 events processed so far, ~ 16 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 124247 (253999 / 649290 events processed so far, ~ 16 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 125247 (254999 / 649290 events processed so far, ~ 15 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 126247 (255999 / 649290 events processed so far, ~ 15 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 127247 (256999 / 649290 events processed so far, ~ 15 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 128247 (257999 / 649290 events processed so far, ~ 15 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 129247 (258999 / 649290 events processed so far, ~ 15 minutes left)
+ ( INFO  )  SCycleBaseExec     : Opening /nfs/dust/cms/group/zprime-uhh/Presel_2017_CHS/workdir_Zprime_PreSelec_2017/uhh2.AnalysisModuleRunner.MC.WJetsToLNu_HT-1200To2500_2017v2_51.root
+ ( INFO  )  SCycleBaseExec     : Processing entry: 493 (259999 / 649290 events processed so far, ~ 15 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 1493 (260999 / 649290 events processed so far, ~ 15 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 2493 (261999 / 649290 events processed so far, ~ 15 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 3493 (262999 / 649290 events processed so far, ~ 15 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 4493 (263999 / 649290 events processed so far, ~ 15 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 5493 (264999 / 649290 events processed so far, ~ 15 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 6493 (265999 / 649290 events processed so far, ~ 15 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 7493 (266999 / 649290 events processed so far, ~ 15 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 8493 (267999 / 649290 events processed so far, ~ 15 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 9493 (268999 / 649290 events processed so far, ~ 15 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 10493 (269999 / 649290 events processed so far, ~ 15 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 11493 (270999 / 649290 events processed so far, ~ 15 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 12493 (271999 / 649290 events processed so far, ~ 15 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 13493 (272999 / 649290 events processed so far, ~ 15 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 14493 (273999 / 649290 events processed so far, ~ 15 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 15493 (274999 / 649290 events processed so far, ~ 15 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 16493 (275999 / 649290 events processed so far, ~ 15 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 17493 (276999 / 649290 events processed so far, ~ 14 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 18493 (277999 / 649290 events processed so far, ~ 14 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 19493 (278999 / 649290 events processed so far, ~ 14 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 20493 (279999 / 649290 events processed so far, ~ 14 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 21493 (280999 / 649290 events processed so far, ~ 14 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 22493 (281999 / 649290 events processed so far, ~ 14 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 23493 (282999 / 649290 events processed so far, ~ 14 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 24493 (283999 / 649290 events processed so far, ~ 14 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 25493 (284999 / 649290 events processed so far, ~ 14 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 26493 (285999 / 649290 events processed so far, ~ 14 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 27493 (286999 / 649290 events processed so far, ~ 14 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 28493 (287999 / 649290 events processed so far, ~ 14 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 29493 (288999 / 649290 events processed so far, ~ 14 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 30493 (289999 / 649290 events processed so far, ~ 14 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 31493 (290999 / 649290 events processed so far, ~ 14 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 32493 (291999 / 649290 events processed so far, ~ 14 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 33493 (292999 / 649290 events processed so far, ~ 14 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 34493 (293999 / 649290 events processed so far, ~ 14 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 35493 (294999 / 649290 events processed so far, ~ 14 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 36493 (295999 / 649290 events processed so far, ~ 14 minutes left)
+ ( INFO  )  SCycleBaseExec     : Processing entry: 37493 (296999 / 649290 events processed so far, ~ 14 minutes left)
+ ( ERROR )  TFile::WriteBuffer : error writing to file jobTempOutput_fsmCLU/SFramePROOFTempOutput.root (-1) (Disk quota exceeded)
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranch::TBranc... : basket's WriteBuffer failed.
+ ( ERROR )  TBranch::TBranc... : 
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( INFO  )  SCycleBaseExec     : Processing entry: 38493 (297999 / 649290 events processed so far, ~ 14 minutes left)
+ ( ERROR )  TBranchElement:... : basket's WriteBuffer failed.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : Failed to write out basket.
+ ( ERROR )  TBranchElement:... : 
+ ( ERROR )  TBranchElement:... : Failed filling branch:jetsAk8CHSSubstructure_SoftDropCHS.m_subjets, nbytes=-1
+ ( ERROR )  TBranchElement:... : Failed filling branch:jetsAk8CHSSubstructure_SoftDropCHS.jetsAk8CHSSubstructure_SoftDropCHS.m_subjets, nbytes=-1
+ ( ERROR )  TTree::Fill        : Failed filling branch:AnalysisTree.jetsAk8CHSSubstructure_SoftDropCHS, nbytes=-1, entry=93068
+ ( ERROR )  TTree::Fill        :  This error is symptomatic of a Tree created as a memory-resident Tree
+ ( ERROR )  TTree::Fill        :  Instead of doing:
+ ( ERROR )  TTree::Fill        :     TTree *T = new TTree(...)
+ ( ERROR )  TTree::Fill        :     TFile *f = new TFile(...)
+ ( ERROR )  TTree::Fill        :  you should do:
+ ( ERROR )  TTree::Fill        :     TFile *f = new TFile(...)
+ ( ERROR )  TTree::Fill        :     TTree *T = new TTree(...)
+ ( ERROR )  TTree::Fill        : 
+ ( ERROR )  TTree::Fill        : 
+ ( ERROR )  SCycleBaseExec     : src/SCycleBaseExec.cxx:255 (virtual Bool_t SCycleBaseExec::Process(Long64_t)): Write error occured in tree "AnalysisTree"
+ ( FATAL )  sframe_main        : app/sframe_main.cxx:65 (int main(int, char**)): SError exception caught
+ ( FATAL )  sframe_main        : app/sframe_main.cxx:66 (int main(int, char**)): Message: `$Ï
+ ( FATAL )  sframe_main        : app/sframe_main.cxx:67 (int main(int, char**)): --> Stopping execution

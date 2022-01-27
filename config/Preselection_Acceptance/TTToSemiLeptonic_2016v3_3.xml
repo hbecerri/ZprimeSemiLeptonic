@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE JobConfiguration PUBLIC "" "JobConfig.dtd" [
+
+<!ENTITY TargetLumi      "36773">
+<!ENTITY PRESELdir       "/nfs/dust/cms/group/zprime-uhh/Presel_2016/">
+<!ENTITY b_Cacheable     "False">
+<!ENTITY NEVT            "-1">
+<!ENTITY IS_PUPPI        "true">
+
+<!ENTITY TTToSemiLeptonic_2016v3          SYSTEM  "../../common/UHH2-datasets/RunII_102X_v1/2016v3/MC_TTToSemileptonic.xml">
+
+]>
+
+<!--
+<ConfigParse NEventsBreak="1000000" LastBreak="0" FileSplit="45" AutoResubmit="0"/>
+<ConfigSGE RAM="2" DISK="2" Mail="condor.desy@gmail.com" Notification="as" Workdir="Preselection_Acceptance"/>
+-->
+
+<JobConfiguration JobName="ZprimePreselectionJob" OutputLevel="INFO">
+	<Library Name="libSUHH2ZprimeSemiLeptonic"/>
+	<Package Name="libSUHH2ZprimeSemiLeptonic"/>
+	<Cycle Name="uhh2::AnalysisModuleRunner" OutputDirectory="/nfs/dust/cms/group/zprime-uhh/Presel_2016///Preselection_Acceptance/" PostFix="_2" TargetLumi="36773">
+		<InputData Cacheable="False" Lumi="289793.1569" Type="MC" Version="TTToSemiLeptonic_2016v3">
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_182.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_183.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_184.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_185.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_186.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_187.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_188.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_189.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_19.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_190.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_191.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_192.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_193.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_194.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_195.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_196.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_197.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_198.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_199.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_2.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_20.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_200.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_201.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_202.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_203.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_204.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_205.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_206.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_207.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_208.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_209.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_21.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_210.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_211.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_212.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_213.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_214.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_215.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_216.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_218.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_219.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_22.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_220.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_221.root" Lumi="0.0"/>
+			<In FileName="/pnfs/desy.de/cms/tier2/store/group/uhh/uhh2ntuples/RunII_102X_v2/2016v3/TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8/crab_TTToSemiLeptonic_TuneCP5_PSweights_13TeV-powheg-pythia8_Summer16_v1/210611_220354/0000/Ntuple_222.root" Lumi="0.0"/>
+			<OutputTree Name="AnalysisTree"/>
+			<InputTree Name="AnalysisTree"/>
+		</InputData>
+		<UserConfig>
+			<Item Name="PrimaryVertexCollection" Value="offlineSlimmedPrimaryVertices"/>
+			<Item Name="GenParticleCollection" Value="GenParticles"/>
+			<Item Name="ElectronCollection" Value="slimmedElectronsUSER"/>
+			<Item Name="MuonCollection" Value="slimmedMuonsUSER"/>
+			<Item Name="JetCollection" Value="jetsAk4CHS"/>
+			<Item Name="GenJetCollection" Value="slimmedGenJets"/>
+			<Item Name="TopJetCollection" Value="jetsAk8CHSSubstructure_SoftDropCHS"/>
+			<Item Name="GenTopJetCollection" Value="genjetsAk8SubstructureSoftDrop"/>
+			<Item Name="TopPuppiJetCollection" Value="jetsAk8PuppiSubstructure_SoftDropPuppi"/>
+			<Item Name="METName" Value="slimmedMETsPuppi"/>
+			<Item Name="genMETName" Value="slimmedMETs_GenMET"/>
+			<Item Name="lumi_file" Value="/nfs/dust/cms/user/hugobg/UHH2_v2/CMSSW_10_2_17/src/UHH2/common/data/2016/Cert_271036-284044_13TeV_23Sep2016ReReco_Collisions16_JSON.root"/>
+			<Item Name="lumihists_lumi_per_bin" Value="500.0"/>
+			<Item Name="pileup_directory" Value="/nfs/dust/cms/user/hugobg/UHH2_v2/CMSSW_10_2_17/src/UHH2/common/data/2016/MyMCPileupHistogram.root"/>
+			<Item Name="pileup_directory_data" Value="/nfs/dust/cms/user/hugobg/UHH2_v2/CMSSW_10_2_17/src/UHH2/common/data/2016/MyDataPileupHistogram.root"/>
+			<Item Name="is_puppi" Value="true"/>
+			<Item Name="Sys_PU" Value="central"/>
+			<Item Name="use_sframe_weight" Value="false"/>
+			<Item Name="jersmear_direction" Value="nominal"/>
+			<Item Name="jecsmear_direction" Value="nominal"/>
+			<Item Name="AnalysisModule" Value="ZprimePreselectionModule_Acceptance"/>
+		</UserConfig>
+	</Cycle>
+</JobConfiguration>

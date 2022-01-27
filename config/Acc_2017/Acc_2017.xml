@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE JobConfiguration PUBLIC "" "JobConfig.dtd" [
+
+<!ENTITY TargetLumi      "41530">
+<!ENTITY PRESELdir       "/nfs/dust/cms/user/hugobg/ZPrime_102X/presel_output/">
+<!ENTITY b_Cacheable     "False">
+<!ENTITY NEVT            "-1">
+<!ENTITY IS_PUPPI        "true">
+
+
+<!ENTITY TTToSemiLeptonic_2017      SYSTEM  "../../common/UHH2-datasets/RunII_102X_v1/2017/MC_TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8.xml">
+
+]>
+
+<!--
+<ConfigParse NEventsBreak="0" LastBreak="0" FileSplit="5000" AutoResubmit="0"/>
+<ConfigSGE RAM="2" DISK="2" Mail="titasroy@uic.edu" Notification="as" Workdir="Acc_2017"/>
+-->
+
+<JobConfiguration JobName="ZprimePreselectionJob" OutputLevel="INFO">
+	<Library Name="libSUHH2ZprimeSemiLeptonic"/>
+	<Package Name="SUHH2ZprimeSemiLeptonic.par"/>
+
+	<Cycle Name="uhh2::AnalysisModuleRunner" OutputDirectory="&PRESELdir;/" PostFix="" TargetLumi="&TargetLumi;">
+
+
+	  <InputData Lumi="35279949.78" NEventsMax="&NEVT;" Type="MC" Version="TTToSemiLeptonic_2017v2" Cacheable="&b_Cacheable;">
+	    &TTToSemiLeptonic_2017;
+	    <InputTree Name="AnalysisTree" />
+	    <OutputTree Name="AnalysisTree" />
+	  </InputData>
+
+
+		<UserConfig>
+			<Item Name="PrimaryVertexCollection" Value="offlineSlimmedPrimaryVertices"/>
+			<Item Name="GenParticleCollection"   Value="GenParticles"/>
+			<Item Name="ElectronCollection"      Value="slimmedElectronsUSER"/>
+			<Item Name="MuonCollection"          Value="slimmedMuonsUSER"/>
+			<Item Name="JetCollection"           Value="jetsAk4CHS"/>
+			<Item Name="GenJetCollection"        Value="slimmedGenJets"/> 
+			<Item Name="TopJetCollection"        Value="jetsAk8CHSSubstructure_SoftDropCHS"/>
+			<Item Name="GenTopJetCollection"     Value="genjetsAk8SubstructureSoftDrop"/> <!-- Check odinary ak8GenJetsFat !--> <!-- new in ntuples! -->
+			<Item Name="TopPuppiJetCollection"   Value="jetsAk8PuppiSubstructure_SoftDropPuppi"/>
+			<Item Name="METName"                 Value="slimmedMETsPuppi"/>
+			<Item Name="genMETName"              Value="slimmedMETs_GenMET"/>
+
+			<Item Name="lumi_file" Value="/nfs/dust/cms/user/titasroy/Unfolding_Ac/CMSSW_10_2_17/src/UHH2/common/data/2017/Cert_294927-306462_13TeV_EOY2017ReReco_Collisions17_JSON_v1.root"/>
+			<Item Name="lumihists_lumi_per_bin" Value="500.0"/>
+
+                        <Item Name="pileup_directory"           Value="/nfs/dust/cms/user/titasroy/Unfolding_Ac/CMSSW_10_2_17/src/UHH2/common/data/2017/MyMCPileupHistogram.root" />
+                        <Item Name="pileup_directory_data"      Value="/nfs/dust/cms/user/titasroy/Unfolding_Ac/CMSSW_10_2_17/src/UHH2/common/data/2017/MyDataPileupHistogram2017.root" />
+
+			<Item Name="is_puppi" Value="&IS_PUPPI;"/>
+                        <Item Name="Sys_PU" Value="central"/>
+
+			<Item Name="use_sframe_weight" Value="false"/>
+			<Item Name="jersmear_direction" Value="nominal"/>
+			<Item Name="jecsmear_direction" Value="nominal"/>
+
+
+
+			<Item Name="AnalysisModule" Value="ZprimePreselectionModule"/>
+		</UserConfig>
+
+	</Cycle>
+</JobConfiguration>
