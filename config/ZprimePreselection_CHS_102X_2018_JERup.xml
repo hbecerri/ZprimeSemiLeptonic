@@ -136,7 +136,7 @@
 
 	<Cycle Name="uhh2::AnalysisModuleRunner" OutputDirectory="&PRESELdir;/" PostFix="" TargetLumi="&TargetLumi;">
 
-
+<!--
           <InputData Lumi="7432926.584" NEventsMax="&NEVT;" Type="MC" Version="ST_tW_antitop_5f_inclusiveDecays_2018" Cacheable="&b_Cacheable;">
             &ST_tW_antitop_5f_inclusiveDecays;
             <InputTree Name="AnalysisTree" />
@@ -238,7 +238,7 @@
             <InputTree Name="AnalysisTree" />
             <OutputTree Name="AnalysisTree" />
           </InputData>
-
+-->
           <InputData Lumi="83703610.93" NEventsMax="&NEVT;" Type="MC" Version="TTToSemiLeptonic_2018" Cacheable="&b_Cacheable;">
             &TTToSemiLeptonic_2018;
             <InputTree Name="AnalysisTree" />
@@ -257,7 +257,7 @@
             <OutputTree Name="AnalysisTree" />
           </InputData>
 
-
+<!--
           <InputData Lumi="0.2291325801" NEventsMax="&NEVT;" Type="MC" Version="QCD_HT50to100_2018" Cacheable="&b_Cacheable;">
             &QCD_HT50to100;
             <InputTree Name="AnalysisTree"/>
@@ -355,8 +355,6 @@
             <OutputTree Name="AnalysisTree"/>
           </InputData>
 
-
-<!--
 
 	  <InputData Lumi="198000" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTTJet_M500_2018" Cacheable="&b_Cacheable;">
 	    &ZprimeToTTJet_M500_2018;

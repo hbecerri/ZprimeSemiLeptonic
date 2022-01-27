@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE JobConfiguration PUBLIC "" "JobConfig.dtd" [
+
+<!ENTITY TargetLumi          "36773">
+<!ENTITY PREFIX              "uhh2.AnalysisModuleRunner.">
+<!ENTITY b_Cacheable         "False">
+<!ENTITY NEVT                "-1">
+<!ENTITY PRESELdir           "/nfs/dust/cms/user/hugobg/Zprime_102X/presel_output/2016/workdir_ttbar_2016/">
+
+<!ENTITY IS_PUPPI            "true">
+<!ENTITY IS_LOOSER_SELECTION "false">
+<!ENTITY CHANNEL "muon">
+<!ENTITY OUTPUTdir           "/nfs/dust/cms/user/hugobg/ZPrime_102X/analysis_output/2016_CHS/&CHANNEL;/">
+
+<!ENTITY TTToSemiLeptonic_2016v3          SYSTEM  "../data/Skimming_datasets_2016v3_CHS_common_JECdown_Timepteta/MC_TTToSemiLeptonic_2016v3.xml">
+]>
+
+<!--
+<ConfigParse NEventsBreak="0" LastBreak="0" FileSplit="5" AutoResubmit="100"/>
+<ConfigSGE RAM="2" DISK="2" Mail="condor.desy@gmail.com" Notification="as" Workdir="workdir_Zprime_Analysis_2016_muon_CHS_JECdown_Timepteta"/>
+-->
+
+<JobConfiguration JobName="ZprimePreselectionJob" OutputLevel="INFO">
+  <Library Name="libSUHH2ZprimeSemiLeptonic"/>
+  <Package Name="SUHH2ZprimeSemiLeptonic.par"/>
+
+  <Cycle Name="uhh2::AnalysisModuleRunner" OutputDirectory="&OUTPUTdir;/" PostFix="" TargetLumi="&TargetLumi;">
+
+
+          <InputData Lumi="87168353.66" NEventsMax="&NEVT;" Type="MC" Version="TTToSemiLeptonic_2016v3" Cacheable="&b_Cacheable;">
+            &TTToSemiLeptonic_2016v3;
+            <InputTree Name="AnalysisTree" />
+            <OutputTree Name="AnalysisTree" />
+          </InputData>
+
+    <UserConfig>
+      <Item Name="PrimaryVertexCollection" Value="offlineSlimmedPrimaryVertices"/>
+      <Item Name="GenParticleCollection"   Value="GenParticles"/>
+      <Item Name="ElectronCollection"      Value="slimmedElectronsUSER"/>
+      <Item Name="MuonCollection"          Value="slimmedMuonsUSER"/>
+      <Item Name="JetCollection"           Value="jetsAk4CHS"/>
+      <Item Name="GenJetCollection"        Value="slimmedGenJets"/>
+      <Item Name="TopJetCollection"        Value="jetsAk8CHSSubstructure_SoftDropCHS"/>
+      <Item Name="GenTopJetCollection"     Value="genjetsAk8SubstructureSoftDrop"/> <!-- Check odinary ak8GenJetsFat !-->
+      <Item Name="TopPuppiJetCollection"   Value="jetsAk8PuppiSubstructure_SoftDropPuppi"/>
+      <Item Name="METName"                 Value="slimmedMETsPuppi"/>
+      <Item Name="genMETName"              Value="slimmedMETs_GenMET"/>
+
+      <Item Name="lumi_file" Value="/nfs/dust/cms/user/hugobg/UHH2/CMSSW_10_2_10/src/UHH2/common/data/2016/Cert_271036-284044_13TeV_23Sep2016ReReco_Collisions16_JSON.root"/>
+      <Item Name="lumihists_lumi_per_bin" Value="500.0"/>
+
+      <Item Name="pileup_directory"           Value="/nfs/dust/cms/user/hugobg/UHH2/CMSSW_10_2_10/src/UHH2/common/data/2016/MyMCPileupHistogram.root" />
+      <Item Name="pileup_directory_data"      Value="/nfs/dust/cms/user/hugobg/UHH2/CMSSW_10_2_10/src/UHH2/common/data/2016/MyDataPileupHistogram.root" />
+      <Item Name="pileup_directory_data_up"   Value="/nfs/dust/cms/user/hugobg/UHH2/CMSSW_10_2_10/src/UHH2/common/data/2016/MyDataPileupHistogram_72383.root" />
+      <Item Name="pileup_directory_data_down" Value="/nfs/dust/cms/user/hugobg/UHH2/CMSSW_10_2_10/src/UHH2/common/data/2016/MyDataPileupHistogram_66017.root" />
+
+      <Item Name="BTagCalibration" Value = "/nfs/dust/cms/user/hugobg/UHH2_v2/CMSSW_10_2_17/src/UHH2/common/data/2016/DeepJet_2016LegacySF_V1_TuneCP5.csv" />
+
+      <Item Name="is_puppi" Value="&IS_PUPPI;"/>
+      <Item Name="is_looser_selection" Value="&IS_LOOSER_SELECTION;"/>
+
+
+      <Item Name="use_sframe_weight"  Value="false"/>
+      <Item Name="jersmear_direction" Value="nominal"/>
+      <Item Name="jecsmear_source" Value="TimePtEta"/>
+      <Item Name="jecsmear_direction" Value="down"/>
+      <Item Name="ScaleVariationMuR" Value="nominal"/>
+      <Item Name="ScaleVariationMuF" Value="nominal"/>
+      <Item Name="Sys_MuonID"         Value="nominal"/>
+      <Item Name="Sys_MuonTrigger"    Value="nominal"/>
+      <Item Name="Sys_PU"             Value="central"/>
+      <Item Name="Sys_BTagSF"         Value="central"/>
+      <Item Name="Sys_EleID"         Value="nominal"/>
+      <Item Name="Sys_EleTrigger"    Value="nominal"/>
+      <Item Name="channel"            Value="&CHANNEL;"/>
+
+
+
+      <Item Name="AnalysisModule" Value="ZprimeAnalysisModule"/>
+    </UserConfig>
+
+  </Cycle>
+</JobConfiguration>
+

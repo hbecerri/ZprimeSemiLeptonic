@@ -84,13 +84,13 @@
             <InputTree Name="AnalysisTree" />
             <OutputTree Name="AnalysisTree" />
           </InputData>
-<!--
+
           <InputData Lumi="177969.6171" NEventsMax="&NEVT;" Type="MC" Version="TTToHadronic_2016v3" Cacheable="&b_Cacheable;">
             &TTToHadronic_2016v3;
             <InputTree Name="AnalysisTree" />
             <OutputTree Name="AnalysisTree" />
           </InputData>
-
+<!--
           <InputData Lumi="771996.4735" NEventsMax="&NEVT;" Type="MC" Version="TTTo2L2Nu_2016v3" Cacheable="&b_Cacheable;">
             &TTTo2L2Nu_2016v3;
             <InputTree Name="AnalysisTree" />

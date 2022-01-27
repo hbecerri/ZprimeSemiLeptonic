@@ -22,7 +22,7 @@
 	<Package Name="libSUHH2ZprimeSemiLeptonic"/>
 	<Cycle Name="uhh2::AnalysisModuleRunner" OutputDirectory="/nfs/dust/cms/user/hugobg/ZPrime_102X/" PostFix="_0" TargetLumi="59970">
 		<InputData Cacheable="False" Lumi="83703610.93" Type="MC" Version="TTToSemiLeptonic_2018">
-			<In FileName="/nfs/dust/cms/group/zprime-uhh/Presel_2016/workdir_Zprime_PreSelec_2016v3_CHS_JERup/uhh2.AnalysisModuleRunner.MC.TTToSemiLeptonic_2016v3_10.root" Lumi="0.0"/>
+			<In FileName="/nfs/dust/cms/group/zprime-uhh/Presel_2016/workdir_Zprime_PreSelec_2016v3_CHS/uhh2.AnalysisModuleRunner.MC.TTToSemiLeptonic_2016v3_10.root" Lumi="0.0"/>
 			<OutputTree Name="AnalysisTree"/>
 			<InputTree Name="AnalysisTree"/>
 		</InputData>

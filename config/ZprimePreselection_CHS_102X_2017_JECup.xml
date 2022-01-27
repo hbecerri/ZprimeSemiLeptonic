@@ -142,7 +142,6 @@
 	<Cycle Name="uhh2::AnalysisModuleRunner" OutputDirectory="&PRESELdir;/" PostFix="" TargetLumi="&TargetLumi;">
 
 
-<!--
 	  <InputData Lumi="7582465.388" NEventsMax="&NEVT;" Type="MC" Version="ST_tW_antitop_5f_inclusiveDecays_2017v2" Cacheable="&b_Cacheable;">
 	    &ST_tW_antitop_5f_inclusiveDecays;
 	    <InputTree Name="AnalysisTree" />
@@ -193,340 +192,6 @@
 	    <OutputTree Name="AnalysisTree" />
 	  </InputData>
 
-	  <InputData Lumi="198000" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTTJet_M500_2017" Cacheable="&b_Cacheable;">
-	    &ZprimeToTTJet_M500_2017;
-	    <InputTree Name="AnalysisTree" />
-	    <OutputTree Name="AnalysisTree" />
-	  </InputData>
-	
-	  <InputData Lumi="200000" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTTJet_M750_2017" Cacheable="&b_Cacheable;">
-	    &ZprimeToTTJet_M750_2017;
-	    <InputTree Name="AnalysisTree" />
-	    <OutputTree Name="AnalysisTree" />
-	  </InputData>
-	  
-	  <InputData Lumi="200000" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTTJet_M1000_2017" Cacheable="&b_Cacheable;">
-	    &ZprimeToTTJet_M1000_2017;
-	    <InputTree Name="AnalysisTree" />
-	    <OutputTree Name="AnalysisTree" />
-	  </InputData>
-	
-	  <InputData Lumi="194000" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTTJet_M1250_2017" Cacheable="&b_Cacheable;">
-	    &ZprimeToTTJet_M1250_2017;
-	    <InputTree Name="AnalysisTree" />
-	    <OutputTree Name="AnalysisTree" />
-	  </InputData>
-	
-	  <InputData Lumi="200000" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTTJet_M1500_2017" Cacheable="&b_Cacheable;">
-	    &ZprimeToTTJet_M1500_2017;
-	    <InputTree Name="AnalysisTree" />
-	    <OutputTree Name="AnalysisTree" />
-	  </InputData>
-	
-	  <InputData Lumi="200000" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTTJet_M2000_2017" Cacheable="&b_Cacheable;">
-	    &ZprimeToTTJet_M2000_2017;
-	    <InputTree Name="AnalysisTree" />
-	    <OutputTree Name="AnalysisTree" />
-	  </InputData>
-	
-	  <InputData Lumi="200000" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTTJet_M2500_2017" Cacheable="&b_Cacheable;">
-	    &ZprimeToTTJet_M2500_2017;
-	    <InputTree Name="AnalysisTree" />
-	    <OutputTree Name="AnalysisTree" />
-	  </InputData>
-	 
-	  <InputData Lumi="200000" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTTJet_M3000_2017" Cacheable="&b_Cacheable;">
-	    &ZprimeToTTJet_M3000_2017;
-	    <InputTree Name="AnalysisTree" />
-	    <OutputTree Name="AnalysisTree" />
-	  </InputData>
-	
-	  <InputData Lumi="200000" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTTJet_M3500_2017" Cacheable="&b_Cacheable;">
-	    &ZprimeToTTJet_M3500_2017;
-	    <InputTree Name="AnalysisTree" />
-	    <OutputTree Name="AnalysisTree" />
-	  </InputData>
-	
-	  <InputData Lumi="200000" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTTJet_M4000_2017" Cacheable="&b_Cacheable;">
-	    &ZprimeToTTJet_M4000_2017;
-	    <InputTree Name="AnalysisTree" />
-	    <OutputTree Name="AnalysisTree" />
-	  </InputData>
-	
-	  <InputData Lumi="200000" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTTJet_M5000_2017" Cacheable="&b_Cacheable;">
-	    &ZprimeToTTJet_M5000_2017;
-	    <InputTree Name="AnalysisTree" />
-	    <OutputTree Name="AnalysisTree" />
-	  </InputData>
-	
-	  <InputData Lumi="197000" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTTJet_M6000_2017" Cacheable="&b_Cacheable;">
-	    &ZprimeToTTJet_M6000_2017;
-	    <InputTree Name="AnalysisTree" />
-	    <OutputTree Name="AnalysisTree" />
-	  </InputData>
-	
-	  <InputData Lumi="185000" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTTJet_M7000_2017" Cacheable="&b_Cacheable;">
-	    &ZprimeToTTJet_M7000_2017;
-	    <InputTree Name="AnalysisTree" />
-	    <OutputTree Name="AnalysisTree" />
-	  </InputData>
-
-
-          <InputData Lumi="182928" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M1000_W100_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M1000_W100_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="184369" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M1000_W300_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M1000_W300_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="177586" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M1250_W375_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M1250_W375_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="194119" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M1500_W150_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M1500_W150_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="172374" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M1500_W450_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M1500_W450_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="202323" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M2000_W200_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M2000_W200_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="166443" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M2000_W600_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M2000_W600_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="188873" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M2500_W250_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M2500_W250_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="191127" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M2500_W750_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M2500_W750_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="192339" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M3000_W300_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M3000_W300_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="184112" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M3000_W900_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M3000_W900_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="204508" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M3500_W1050_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M3500_W1050_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="192605" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M3500_W350_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M3500_W350_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="213303" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M4000_W1200_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M4000_W1200_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="191160" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M4000_W400_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M4000_W400_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="166579" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M5000_W1500_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M5000_W1500_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="196958" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M5000_W500_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M5000_W500_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="202098" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M500_W150_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M500_W150_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="190602" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M500_W50_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M500_W50_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="168439" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M6000_W1800_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M6000_W1800_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="163079" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M6000_W600_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M6000_W600_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="170815" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M7000_W2100_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M7000_W2100_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="168505" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M7000_W700_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M7000_W700_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="194561" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M750_W225_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M750_W225_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="235279" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M750_W75_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M750_W75_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="210047" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M8000_W2400_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M8000_W2400_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="166452" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M8000_W800_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M8000_W800_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="172819" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M9000_W2700_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M9000_W2700_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="172368" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M9000_W900_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M9000_W900_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-
-          <InputData Lumi="180809" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M1000_W10_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M1000_W10_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="209966" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M1500_W15_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M1500_W15_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="197503" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M2000_W20_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M2000_W20_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="190046" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M2500_W25_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M2500_W25_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="184512" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M3000_W30_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M3000_W30_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="178110" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M3500_W35_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M3500_W35_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="172644" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M4000_W40_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M4000_W40_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="166100" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M5000_W50_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M5000_W50_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="214489" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M500_W5_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M500_W5_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="195725" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M6000_W60_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M6000_W60_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="209489" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M7000_W70_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M7000_W70_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="148325" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M8000_W80_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M8000_W80_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="189140" NEventsMax="&NEVT;" Type="MC" Version="ZprimeToTT_M750_W7p5_2017" Cacheable="&b_Cacheable;">
-            &ZprimeToTT_M750_W7p5_2017;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
--->
-<!--
 
 	  <InputData Lumi="7337.300986" NEventsMax="&NEVT;" Type="MC" Version="WJetsToLNu_HT-70To100_2017v2" Cacheable="&b_Cacheable;">
 	    &WJetsToLNu_HT-70To100_2017;
@@ -584,14 +249,12 @@
 	    <OutputTree Name="AnalysisTree" />
 	  </InputData>
 
--->
 	  <InputData Lumi="35279949.78" NEventsMax="&NEVT;" Type="MC" Version="TTToSemiLeptonic_2017v2" Cacheable="&b_Cacheable;">
 	    &TTToSemiLeptonic_2017;
 	    <InputTree Name="AnalysisTree" />
 	    <OutputTree Name="AnalysisTree" />
 	  </InputData>
 
-<!--
 
           <InputData Lumi="109490.4712" NEventsMax="&NEVT;" Type="MC" Version="TTToHadronic_2017v2" Cacheable="&b_Cacheable;">
             &TTToHadronic_2017;
@@ -685,7 +348,6 @@
           </InputData>
 
 
-
           <InputData Lumi="3984709.669" NEventsMax="&NEVT;" Type="MC" Version="DYJetsToLL_M-50_HT-800to1200_2017v2" Cacheable="&b_Cacheable;">
             &DYJetsToLL_M-50_HT-800to1200_2017;
             <InputTree Name="AnalysisTree"/>
@@ -704,7 +366,6 @@
             <OutputTree Name="AnalysisTree"/>
           </InputData>
 
--->
 
 		<UserConfig>
 			<Item Name="PrimaryVertexCollection" Value="offlineSlimmedPrimaryVertices"/>

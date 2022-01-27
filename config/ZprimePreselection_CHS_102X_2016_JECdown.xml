@@ -84,7 +84,7 @@
             <OutputTree Name="AnalysisTree" />
           </InputData>
 
-<!--
+
 
           <InputData Lumi="177969.6171" NEventsMax="&NEVT;" Type="MC" Version="TTToHadronic_2016v3" Cacheable="&b_Cacheable;">
             &TTToHadronic_2016v3;
@@ -94,90 +94,6 @@
 
           <InputData Lumi="771996.4735" NEventsMax="&NEVT;" Type="MC" Version="TTTo2L2Nu_2016v3" Cacheable="&b_Cacheable;">
             &TTTo2L2Nu_2016v3;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="1" NEventsMax="&NEVT;" Type="DATA" Version="DATA_SingleElectron_Run2016v3B" Cacheable="&b_Cacheable;">
-            &DATA_SingleElectron_Run2016v3B;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="1" NEventsMax="&NEVT;" Type="DATA" Version="DATA_SingleElectron_Run2016v3C" Cacheable="&b_Cacheable;">
-            &DATA_SingleElectron_Run2016v3C;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="1" NEventsMax="&NEVT;" Type="DATA" Version="DATA_SingleElectron_Run2016v3D" Cacheable="&b_Cacheable;">
-            &DATA_SingleElectron_Run2016v3D;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="1" NEventsMax="&NEVT;" Type="DATA" Version="DATA_SingleElectron_Run2016v3E" Cacheable="&b_Cacheable;">
-            &DATA_SingleElectron_Run2016v3E;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="1" NEventsMax="&NEVT;" Type="DATA" Version="DATA_SingleElectron_Run2016v3F" Cacheable="&b_Cacheable;">
-            &DATA_SingleElectron_Run2016v3F;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="1" NEventsMax="&NEVT;" Type="DATA" Version="DATA_SingleElectron_Run2016v3G" Cacheable="&b_Cacheable;">
-            &DATA_SingleElectron_Run2016v3G;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="1" NEventsMax="&NEVT;" Type="DATA" Version="DATA_SingleElectron_Run2016v3H" Cacheable="&b_Cacheable;">
-            &DATA_SingleElectron_Run2016v3H;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="1" NEventsMax="&NEVT;" Type="DATA" Version="DATA_SingleMuon_Run2016v3B" Cacheable="&b_Cacheable;">
-            &DATA_SingleMuon_Run2016v3B;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="1" NEventsMax="&NEVT;" Type="DATA" Version="DATA_SingleMuon_Run2016v3C" Cacheable="&b_Cacheable;">
-            &DATA_SingleMuon_Run2016v3C;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="1" NEventsMax="&NEVT;" Type="DATA" Version="DATA_SingleMuon_Run2016v3D" Cacheable="&b_Cacheable;">
-            &DATA_SingleMuon_Run2016v3D;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="1" NEventsMax="&NEVT;" Type="DATA" Version="DATA_SingleMuon_Run2016v3E" Cacheable="&b_Cacheable;">
-            &DATA_SingleMuon_Run2016v3E;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="1" NEventsMax="&NEVT;" Type="DATA" Version="DATA_SingleMuon_Run2016v3F" Cacheable="&b_Cacheable;">
-            &DATA_SingleMuon_Run2016v3F;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="1" NEventsMax="&NEVT;" Type="DATA" Version="DATA_SingleMuon_Run2016v3G" Cacheable="&b_Cacheable;">
-            &DATA_SingleMuon_Run2016v3G;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="1" NEventsMax="&NEVT;" Type="DATA" Version="DATA_SingleMuon_Run2016v3H" Cacheable="&b_Cacheable;">
-            &DATA_SingleMuon_Run2016v3H;
             <InputTree Name="AnalysisTree" />
             <OutputTree Name="AnalysisTree" />
           </InputData>
@@ -376,7 +292,6 @@
             <OutputTree Name="AnalysisTree"/>
           </InputData>
 
--->
 
 		<UserConfig>
 			<Item Name="PrimaryVertexCollection" Value="offlineSlimmedPrimaryVertices"/>

@@ -64,6 +64,8 @@ protected:
   std::unique_ptr<uhh2::Selection> jet2_sel;
   std::unique_ptr<uhh2::Selection> met_sel;
 
+  Event::Handle<std::vector<float> > h_wgtMC__PDF;
+
   bool isMC, ispuppi;
   string Sys_PU;
 
@@ -191,6 +193,8 @@ ZprimePreselectionModule::ZprimePreselectionModule(uhh2::Context& ctx){
   toppuppijetCorr->init(ctx);
 
   //// EVENT SELECTION
+  h_wgtMC__PDF = ctx.declare_event_output<std::vector<float> >("wgtMC__PDF");
+
   jet1_sel.reset(new NJetSelection(1, -1, JetId(PtEtaCut(jet1_pt, 2.4))));
   jet2_sel.reset(new NJetSelection(2, -1, JetId(PtEtaCut(jet2_pt, 2.4))));
   met_sel  .reset(new METCut  (MET   , uhh2::infinity));
@@ -205,6 +209,10 @@ ZprimePreselectionModule::ZprimePreselectionModule(uhh2::Context& ctx){
 
 
 bool ZprimePreselectionModule::process(uhh2::Event& event){
+
+
+  std::vector<float> w_PDF;
+  w_PDF.clear();
 
 
 //debug
@@ -322,6 +330,24 @@ chsjetInd++;
   const bool pass_met = met_sel->passes(event);
   if(!pass_met) return false;
   fill_histograms(event, "MET");
+
+  const auto & sys_weights = event.genInfo->systweights();
+
+  if(isMC){
+      if(!sys_weights.empty()){ 
+          float orig_weight = event.genInfo->originalXWGTUP();
+          int MY_FIRST_INDEX = 9;
+          for (unsigned i=0; i < 100; ++i) {
+                const float pdf_w(sys_weights[i+MY_FIRST_INDEX]/orig_weight);
+                w_PDF.push_back(pdf_w);
+          }
+       }
+       event.set(h_wgtMC__PDF, std::move(w_PDF));
+   }
+   if(!isMC){
+          w_PDF.push_back(1.);
+  }
+
 
   return true;
 

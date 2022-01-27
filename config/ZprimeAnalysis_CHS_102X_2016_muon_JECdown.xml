@@ -12,21 +12,6 @@
 <!ENTITY CHANNEL "muon">
 <!ENTITY OUTPUTdir           "/nfs/dust/cms/user/hugobg/ZPrime_102X/analysis_output/2016_CHS/&CHANNEL;/">
 
-<!ENTITY DATA_SingleElectron_Run2016v3B   SYSTEM  "../data/Skimming_datasets_2016v3_CHS_common_JECdown/DATA_DATA_SingleElectron_Run2016v3B.xml">
-<!ENTITY DATA_SingleMuon_Run2016v3B   SYSTEM  "../data/Skimming_datasets_2016v3_CHS_common_JECdown/DATA_DATA_SingleMuon_Run2016v3B.xml">
-<!ENTITY DATA_SingleElectron_Run2016v3C   SYSTEM  "../data/Skimming_datasets_2016v3_CHS_common_JECdown/DATA_DATA_SingleElectron_Run2016v3C.xml">
-<!ENTITY DATA_SingleMuon_Run2016v3C   SYSTEM  "../data/Skimming_datasets_2016v3_CHS_common_JECdown/DATA_DATA_SingleMuon_Run2016v3C.xml">
-<!ENTITY DATA_SingleElectron_Run2016v3D   SYSTEM  "../data/Skimming_datasets_2016v3_CHS_common_JECdown/DATA_DATA_SingleElectron_Run2016v3D.xml">
-<!ENTITY DATA_SingleMuon_Run2016v3D   SYSTEM  "../data/Skimming_datasets_2016v3_CHS_common_JECdown/DATA_DATA_SingleMuon_Run2016v3D.xml">
-<!ENTITY DATA_SingleElectron_Run2016v3E   SYSTEM  "../data/Skimming_datasets_2016v3_CHS_common_JECdown/DATA_DATA_SingleElectron_Run2016v3E.xml">
-<!ENTITY DATA_SingleMuon_Run2016v3E   SYSTEM  "../data/Skimming_datasets_2016v3_CHS_common_JECdown/DATA_DATA_SingleMuon_Run2016v3E.xml">
-<!ENTITY DATA_SingleElectron_Run2016v3F   SYSTEM  "../data/Skimming_datasets_2016v3_CHS_common_JECdown/DATA_DATA_SingleElectron_Run2016v3F.xml">
-<!ENTITY DATA_SingleMuon_Run2016v3F   SYSTEM  "../data/Skimming_datasets_2016v3_CHS_common_JECdown/DATA_DATA_SingleMuon_Run2016v3F.xml">
-<!ENTITY DATA_SingleElectron_Run2016v3G   SYSTEM  "../data/Skimming_datasets_2016v3_CHS_common_JECdown/DATA_DATA_SingleElectron_Run2016v3G.xml">
-<!ENTITY DATA_SingleMuon_Run2016v3G   SYSTEM  "../data/Skimming_datasets_2016v3_CHS_common_JECdown/DATA_DATA_SingleMuon_Run2016v3G.xml">
-<!ENTITY DATA_SingleElectron_Run2016v3H   SYSTEM  "../data/Skimming_datasets_2016v3_CHS_common_JECdown/DATA_DATA_SingleElectron_Run2016v3H.xml">
-<!ENTITY DATA_SingleMuon_Run2016v3H   SYSTEM  "../data/Skimming_datasets_2016v3_CHS_common_JECdown/DATA_DATA_SingleMuon_Run2016v3H.xml">
-
 <!ENTITY WJetsToLNu_HT-70To100_2016v3  SYSTEM  "../data/Skimming_datasets_2016v3_CHS_common_JECdown/MC_WJetsToLNu_HT-70To100_2016v3.xml">
 <!ENTITY WJetsToLNu_HT-100To200_2016v3  SYSTEM  "../data/Skimming_datasets_2016v3_CHS_common_JECdown/MC_WJetsToLNu_HT-100To200_2016v3.xml">
 <!ENTITY WJetsToLNu_HT-200To400_2016v3  SYSTEM  "../data/Skimming_datasets_2016v3_CHS_common_JECdown/MC_WJetsToLNu_HT-200To400_2016v3.xml">
@@ -81,19 +66,17 @@
 
   <Cycle Name="uhh2::AnalysisModuleRunner" OutputDirectory="&OUTPUTdir;/" PostFix="" TargetLumi="&TargetLumi;">
 
-<!--
+
           <InputData Lumi="46376.6826" NEventsMax="&NEVT;" Type="MC" Version="DYJetsToLL_M-50_HT-70to100_2016v3" Cacheable="&b_Cacheable;">
              &DYJetsToLL_M-50_HT-70to100_2016v3;
              <InputTree Name="AnalysisTree"/>
              <OutputTree Name="AnalysisTree"/>
           </InputData>
-
          <InputData Lumi="60547.18646" NEventsMax="&NEVT;" Type="MC" Version="DYJetsToLL_M-50_HT-100to200_2016v3" Cacheable="&b_Cacheable;">
              &DYJetsToLL_M-50_HT-100to200_2016v3;
              <InputTree Name="AnalysisTree"/>
              <OutputTree Name="AnalysisTree"/>
           </InputData>
-
           <InputData Lumi="190194.9712" NEventsMax="&NEVT;" Type="MC" Version="DYJetsToLL_M-50_HT-200to400_2016v3" Cacheable="&b_Cacheable;">
              &DYJetsToLL_M-50_HT-200to400_2016v3;
              <InputTree Name="AnalysisTree"/>
@@ -114,7 +97,6 @@
              <InputTree Name="AnalysisTree"/>
              <OutputTree Name="AnalysisTree"/>
           </InputData>
-
           <InputData Lumi="3200905.371" NEventsMax="&NEVT;" Type="MC" Version="DYJetsToLL_M-50_HT-1200to2500_2016v3" Cacheable="&b_Cacheable;">
              &DYJetsToLL_M-50_HT-1200to2500_2016v3;
              <InputTree Name="AnalysisTree"/>
@@ -125,145 +107,48 @@
              <InputTree Name="AnalysisTree"/>
              <OutputTree Name="AnalysisTree"/>
           </InputData>
-
           <InputData Lumi="0.01695242903" NEventsMax="&NEVT;" Type="MC" Version="QCD_HT50to100_2016v3" Cacheable="&b_Cacheable;">
              &QCD_HT50to100_2016v3;
              <InputTree Name="AnalysisTree" />
              <OutputTree Name="AnalysisTree" />
           </InputData>
-
-
           <InputData Lumi="2.914202787" NEventsMax="&NEVT;" Type="MC" Version="QCD_HT100to200_2016v3" Cacheable="&b_Cacheable;">
              &QCD_HT100to200_2016v3;
              <InputTree Name="AnalysisTree" />
              <OutputTree Name="AnalysisTree" />
           </InputData>
-
           <InputData Lumi="33.12492699" NEventsMax="&NEVT;" Type="MC" Version="QCD_HT200to300_2016v3" Cacheable="&b_Cacheable;">
             &QCD_HT200to300_2016v3;
             <InputTree Name="AnalysisTree" />
             <OutputTree Name="AnalysisTree" />
           </InputData>
-
-
           <InputData Lumi="152.707843" NEventsMax="&NEVT;" Type="MC" Version="QCD_HT300to500_2016v3" Cacheable="&b_Cacheable;">
             &QCD_HT300to500_2016v3;
             <InputTree Name="AnalysisTree" />
             <OutputTree Name="AnalysisTree" />
           </InputData>
-
-
           <InputData Lumi="1648.17919" NEventsMax="&NEVT;" Type="MC" Version="QCD_HT500to700_2016v3" Cacheable="&b_Cacheable;">
             &QCD_HT500to700_2016v3;
             <InputTree Name="AnalysisTree" />
             <OutputTree Name="AnalysisTree" />
           </InputData>
-
           <InputData Lumi="5378.647343" NEventsMax="&NEVT;" Type="MC" Version="QCD_HT700to1000_2016v3" Cacheable="&b_Cacheable;">
             &QCD_HT700to1000_2016v3;
             <InputTree Name="AnalysisTree" />
             <OutputTree Name="AnalysisTree" />
           </InputData>
-
           <InputData Lumi="12602.26926" NEventsMax="&NEVT;" Type="MC" Version="QCD_HT1000to1500_2016v3" Cacheable="&b_Cacheable;">
             &QCD_HT1000to1500_2016v3;
             <InputTree Name="AnalysisTree" />
             <OutputTree Name="AnalysisTree" />
           </InputData>
-
           <InputData Lumi="98743.59466" NEventsMax="&NEVT;" Type="MC" Version="QCD_HT1500to2000_2016v3" Cacheable="&b_Cacheable;">
             &QCD_HT1500to2000_2016v3;
             <InputTree Name="AnalysisTree" />
             <OutputTree Name="AnalysisTree" />
           </InputData>
-
           <InputData Lumi="235651.7036" NEventsMax="&NEVT;" Type="MC" Version="QCD_HT2000toInf_2016v3" Cacheable="&b_Cacheable;">
             &QCD_HT2000toInf_2016v3;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-
-          <InputData Lumi="1" NEventsMax="&NEVT;" Type="DATA" Version="DATA_SingleElectron_Run2016v3B_blinded" Cacheable="&b_Cacheable;">
-            &DATA_SingleElectron_Run2016v3B;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="1" NEventsMax="&NEVT;" Type="DATA" Version="DATA_SingleElectron_Run2016v3C_blinded" Cacheable="&b_Cacheable;">
-            &DATA_SingleElectron_Run2016v3C;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="1" NEventsMax="&NEVT;" Type="DATA" Version="DATA_SingleElectron_Run2016v3D_blinded" Cacheable="&b_Cacheable;">
-            &DATA_SingleElectron_Run2016v3D;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="1" NEventsMax="&NEVT;" Type="DATA" Version="DATA_SingleElectron_Run2016v3E_blinded" Cacheable="&b_Cacheable;">
-            &DATA_SingleElectron_Run2016v3E;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="1" NEventsMax="&NEVT;" Type="DATA" Version="DATA_SingleElectron_Run2016v3F_blinded" Cacheable="&b_Cacheable;">
-            &DATA_SingleElectron_Run2016v3F;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="1" NEventsMax="&NEVT;" Type="DATA" Version="DATA_SingleElectron_Run2016v3G_blinded" Cacheable="&b_Cacheable;">
-            &DATA_SingleElectron_Run2016v3G;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="1" NEventsMax="&NEVT;" Type="DATA" Version="DATA_SingleElectron_Run2016v3H_blinded" Cacheable="&b_Cacheable;">
-            &DATA_SingleElectron_Run2016v3H;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="1" NEventsMax="&NEVT;" Type="DATA" Version="DATA_SingleMuon_Run2016v3B_blinded" Cacheable="&b_Cacheable;">
-            &DATA_SingleMuon_Run2016v3B;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="1" NEventsMax="&NEVT;" Type="DATA" Version="DATA_SingleMuon_Run2016v3C_blinded" Cacheable="&b_Cacheable;">
-            &DATA_SingleMuon_Run2016v3C;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="1" NEventsMax="&NEVT;" Type="DATA" Version="DATA_SingleMuon_Run2016v3D_blinded" Cacheable="&b_Cacheable;">
-            &DATA_SingleMuon_Run2016v3D;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="1" NEventsMax="&NEVT;" Type="DATA" Version="DATA_SingleMuon_Run2016v3E_blinded" Cacheable="&b_Cacheable;">
-            &DATA_SingleMuon_Run2016v3E;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="1" NEventsMax="&NEVT;" Type="DATA" Version="DATA_SingleMuon_Run2016v3F_blinded" Cacheable="&b_Cacheable;">
-            &DATA_SingleMuon_Run2016v3F;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="1" NEventsMax="&NEVT;" Type="DATA" Version="DATA_SingleMuon_Run2016v3G_blinded" Cacheable="&b_Cacheable;">
-            &DATA_SingleMuon_Run2016v3G;
-            <InputTree Name="AnalysisTree" />
-            <OutputTree Name="AnalysisTree" />
-          </InputData>
-
-          <InputData Lumi="1" NEventsMax="&NEVT;" Type="DATA" Version="DATA_SingleMuon_Run2016v3H_blinded" Cacheable="&b_Cacheable;">
-            &DATA_SingleMuon_Run2016v3H;
             <InputTree Name="AnalysisTree" />
             <OutputTree Name="AnalysisTree" />
           </InputData>
@@ -273,104 +158,88 @@
             <InputTree Name="AnalysisTree" />
             <OutputTree Name="AnalysisTree" />
           </InputData>
-
-
           <InputData Lumi="29308.45319" NEventsMax="&NEVT;" Type="MC" Version="WJetsToLNu_HT-100To200_2016v3" Cacheable="&b_Cacheable;">
             &WJetsToLNu_HT-100To200_2016v3;
             <InputTree Name="AnalysisTree" />
             <OutputTree Name="AnalysisTree" />
           </InputData>
-
           <InputData Lumi="52956.76756" NEventsMax="&NEVT;" Type="MC" Version="WJetsToLNu_HT-200To400_2016v3" Cacheable="&b_Cacheable;">
             &WJetsToLNu_HT-200To400_2016v3;
             <InputTree Name="AnalysisTree" />
             <OutputTree Name="AnalysisTree" />
           </InputData>
-
           <InputData Lumi="159010.2664" NEventsMax="&NEVT;" Type="MC" Version="WJetsToLNu_HT-400To600_2016v3" Cacheable="&b_Cacheable;">
             &WJetsToLNu_HT-400To600_2016v3;
             <InputTree Name="AnalysisTree" />
             <OutputTree Name="AnalysisTree" />
           </InputData>
-
           <InputData Lumi="1548258.492" NEventsMax="&NEVT;" Type="MC" Version="WJetsToLNu_HT-600To800_2016v3" Cacheable="&b_Cacheable;">
             &WJetsToLNu_HT-600To800_2016v3;
             <InputTree Name="AnalysisTree" />
             <OutputTree Name="AnalysisTree" />
           </InputData>
-
           <InputData Lumi="1423733.818" NEventsMax="&NEVT;" Type="MC" Version="WJetsToLNu_HT-800To1200_2016v3" Cacheable="&b_Cacheable;">
             &WJetsToLNu_HT-800To1200_2016v3;
             <InputTree Name="AnalysisTree" />
             <OutputTree Name="AnalysisTree" />
           </InputData>
-
           <InputData Lumi="5171136.945" NEventsMax="&NEVT;" Type="MC" Version="WJetsToLNu_HT-1200To2500_2016v3" Cacheable="&b_Cacheable;">
             &WJetsToLNu_HT-1200To2500_2016v3;
             <InputTree Name="AnalysisTree" />
             <OutputTree Name="AnalysisTree" />
           </InputData>
-
           <InputData Lumi="82200716.73" NEventsMax="&NEVT;" Type="MC" Version="WJetsToLNu_HT-2500ToInf_2016v3" Cacheable="&b_Cacheable;">
             &WJetsToLNu_HT-2500ToInf_2016v3;
             <InputTree Name="AnalysisTree" />
             <OutputTree Name="AnalysisTree" />
           </InputData>
-
           <InputData Lumi="69352.89646" NEventsMax="&NEVT;" Type="MC" Version="WW_2016v3" Cacheable="&b_Cacheable;">
             &WW_2016v3;
             <InputTree Name="AnalysisTree" />
             <OutputTree Name="AnalysisTree" />
           </InputData>
-
           <InputData Lumi="84820.09336" NEventsMax="&NEVT;" Type="MC" Version="WZ_2016v3" Cacheable="&b_Cacheable;">
             &WZ_2016v3;
             <InputTree Name="AnalysisTree" />
             <OutputTree Name="AnalysisTree" />
           </InputData>
-
           <InputData Lumi="120323.0648" NEventsMax="&NEVT;" Type="MC" Version="ZZ_2016v3" Cacheable="&b_Cacheable;">
             &ZZ_2016v3;
             <InputTree Name="AnalysisTree" />
             <OutputTree Name="AnalysisTree" />
           </InputData>
-
           <InputData Lumi="189386.1646" NEventsMax="&NEVT;" Type="MC" Version="ST_tW_antitop_5f_inclusiveDecays_2016v3" Cacheable="&b_Cacheable;">
             &ST_tW_antitop_5f_inclusiveDecays_2016v3;
             <InputTree Name="AnalysisTree" />
             <OutputTree Name="AnalysisTree" />
           </InputData>
-
           <InputData Lumi="190615.0628" NEventsMax="&NEVT;" Type="MC" Version="ST_tW_top_5f_inclusiveDecays_2016v3" Cacheable="&b_Cacheable;">
             &ST_tW_top_5f_inclusiveDecays_2016v3;
             <InputTree Name="AnalysisTree" />
             <OutputTree Name="AnalysisTree" />
           </InputData>
-
           <InputData Lumi="477080.5312" NEventsMax="&NEVT;" Type="MC" Version="ST_t-channel_antitop_2016v3" Cacheable="&b_Cacheable;">
             &ST_t-channel_antitop_2016v3;
             <InputTree Name="AnalysisTree" />
             <OutputTree Name="AnalysisTree" />
           </InputData>
-
           <InputData Lumi="477843.6995" NEventsMax="&NEVT;" Type="MC" Version="ST_t-channel_top_2016v3" Cacheable="&b_Cacheable;">
             &ST_t-channel_top_2016v3;
             <InputTree Name="AnalysisTree" />
             <OutputTree Name="AnalysisTree" />
           </InputData>
-
           <InputData Lumi="2911582.981" NEventsMax="&NEVT;" Type="MC" Version="ST_s-channel_2016v3" Cacheable="&b_Cacheable;">
             &ST_s-channel_2016v3;
             <InputTree Name="AnalysisTree" />
             <OutputTree Name="AnalysisTree" />
           </InputData>
--->
+
           <InputData Lumi="87168353.66" NEventsMax="&NEVT;" Type="MC" Version="TTToSemiLeptonic_2016v3" Cacheable="&b_Cacheable;">
             &TTToSemiLeptonic_2016v3;
             <InputTree Name="AnalysisTree" />
             <OutputTree Name="AnalysisTree" />
           </InputData>
-<!--
+
           <InputData Lumi="55800000" NEventsMax="&NEVT;" Type="MC" Version="TTToHadronic_2016v3" Cacheable="&b_Cacheable;">
             &TTToHadronic_2016v3;
             <InputTree Name="AnalysisTree" />
@@ -382,7 +251,7 @@
             <InputTree Name="AnalysisTree" />
             <OutputTree Name="AnalysisTree" />
           </InputData>
--->
+
 
     <UserConfig>
       <Item Name="PrimaryVertexCollection" Value="offlineSlimmedPrimaryVertices"/>

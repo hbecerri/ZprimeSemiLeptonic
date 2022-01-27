@@ -532,7 +532,7 @@
 	    <OutputTree Name="AnalysisTree" />
 	  </InputData>
 
-<!--
+
 
           <InputData Lumi="109490.4712" NEventsMax="&NEVT;" Type="MC" Version="TTToHadronic_2017v2" Cacheable="&b_Cacheable;">
             &TTToHadronic_2017;
@@ -548,7 +548,7 @@
             <OutputTree Name="AnalysisTree" />
           </InputData>
 
-
+<!--
           <InputData Lumi="7.277908556" NEventsMax="&NEVT;" Type="MC" Version="QCD_HT100to200_2017v2" Cacheable="&b_Cacheable;">
             &QCD_HT100to200;
             <InputTree Name="AnalysisTree"/>
